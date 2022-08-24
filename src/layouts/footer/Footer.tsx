@@ -65,21 +65,21 @@ export default function Footer() {
           </Heading>
           <ul className="mt-2 space-y-1">
             <li>
-              <Link href="/">
+              <Link href="/cookies">
                 <a className="c-link-3-a text-base font-medium text-muted">
-                  Zpracování cookies
+                  Cookies
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/gdpr">
                 <a className="c-link-3-a text-base font-medium text-muted">
                   Zpracování osobních údajů
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/brand">
                 <a className="c-link-3-a text-base font-medium text-muted">
                   Firemní identita značky
                 </a>

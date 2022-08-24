@@ -4,4 +4,5 @@
 
 @import "base/base.css";
 @import "components/components.css";
+@import "components/text-formatter.css";
 @import "helpers/scroll-lock.css";

@@ -19,7 +19,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
-            className="text-base text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaFacebookF />
           </a>
@@ -28,7 +28,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
-            className="text-base text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaInstagram />
           </a>
@@ -37,7 +37,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
-            className="text-base text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaYoutube />
           </a>
@@ -46,7 +46,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
-            className="text-base text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaSpotify />
           </a>
