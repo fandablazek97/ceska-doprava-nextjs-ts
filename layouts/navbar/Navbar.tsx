@@ -38,7 +38,7 @@ export default function Navbar() {
     // >
     <nav className={`fixed z-[100] h-20 w-screen bg-body/80 backdrop-blur`}>
       <Wrapper
-        size="fluid"
+        size="lg"
         className="flex h-full items-center justify-between gap-6 md:gap-10 xl:gap-16"
       >
         <NavbarMainLinks className="hidden lg:flex" />

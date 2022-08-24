@@ -149,6 +149,7 @@ export default function Contact() {
           frameBorder="0"
           scrolling="no"
           className="aspect-square w-full md:aspect-[2/1]"
+          loading="lazy"
         />
       </Wrapper>
     </>

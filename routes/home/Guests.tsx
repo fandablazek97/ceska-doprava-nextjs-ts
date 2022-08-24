@@ -67,7 +67,7 @@ export default function Guests({ className = "" }: Props) {
       <Tab.Panels className={"py-10 lg:py-0 lg:px-5"}>
         <Tab.Panel
           className={
-            "grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
+            "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
           <GuestCard />
@@ -82,7 +82,7 @@ export default function Guests({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel
           className={
-            "grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
+            "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
           <GuestCard />
@@ -92,7 +92,7 @@ export default function Guests({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel
           className={
-            "grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
+            "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
           <GuestCard />

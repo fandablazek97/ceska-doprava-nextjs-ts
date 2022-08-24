@@ -12,7 +12,7 @@ export default function MenuMainLinks({
 }: MenuMainLinksOptions) {
   return (
     <ul
-      className={`flex list-none flex-col space-y-5 leading-none ${className}`}
+      className={`flex list-none flex-col items-start space-y-5 leading-none ${className}`}
     >
       {mainRoutes.map((route) => (
         <li key={route.label}>

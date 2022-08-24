@@ -9,11 +9,11 @@ export const mainRoutes = [
   },
   {
     label: "Program",
-    path: "/",
+    path: "/program",
   },
   {
     label: "Kontakt",
-    path: "/",
+    path: "/#kontakt",
   },
 ];
 
@@ -23,7 +23,7 @@ export const ctaMenu = [
     link: "tel:+420123456789",
   },
   {
-    label: "info@domena.cz",
-    link: "mailto:info@domena.cz",
+    label: "info@fotofestplzen.cz",
+    link: "mailto:info@fotofestplzen.cz",
   },
 ];

@@ -8,7 +8,7 @@ type WrapperOptions = {
 };
 
 const sizeClasses = {
-  sm: "max-w-3xl",
+  sm: "max-w-[840px]",
   base: "max-w-7xl",
   lg: "max-w-[1728px]",
   fluid: "",

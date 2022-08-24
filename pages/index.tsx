@@ -9,15 +9,14 @@ import Guests from "@/routes/home/Guests";
 import Hero from "@/routes/home/Hero";
 import Newsletter from "@/routes/home/Newsletter";
 import Partners from "@/routes/home/Partners";
+import Program from "@/routes/home/Program";
+import ProgramDesktop from "@/routes/home/ProgramDesktop";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Seo
-        title="Ui framework"
-        description="Nextjs ui framework v2 made with typescript"
-      />
+      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
       <Hero />
       <Wrapper size="lg" paddedContent="none">
         <Aftermovie />
@@ -48,6 +47,8 @@ const Home: NextPage = () => {
           voluptates optio provident reprehenderit molestias voluptatibus itaque
           eos, a inventore quos!
         </p>
+        <Program className="mt-20" />
+        <ProgramDesktop className="mt-36" />
       </Wrapper>
 
       <Wrapper paddedContent="base">

@@ -22,6 +22,7 @@ export default function GuestCard({
         width={500}
         height={500}
         className="aspect-square object-cover"
+        loading="lazy"
       />
       <Heading size="sm" level={3}>
         {name}
