@@ -16,7 +16,7 @@ import { HiDocumentDuplicate, HiPaperAirplane } from "react-icons/hi";
 export default function Contact() {
   return (
     <>
-      <Wrapper paddedContent="sm">
+      <Wrapper id="kontakt" paddedContent="sm">
         <div className="lg:grid lg:grid-cols-7 lg:gap-32">
           <MainHeading level={2} number="04" size="2xl" className="col-span-2">
             Kontakt

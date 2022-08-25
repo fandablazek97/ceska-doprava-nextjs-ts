@@ -1,7 +1,7 @@
-import { Footer } from "@layouts/footer";
-import { Head } from "@layouts/head";
-import { Navbar } from "@layouts/navbar";
-import { SkipToContent } from "@layouts/skipToContent";
+import { Footer } from "@components/root/footer";
+import { Head } from "@components/root/head";
+import { Navbar } from "@components/root/navbar";
+import { SkipToContent } from "@components/root/skipToContent";
 
 type AppShellOptions = {
   children: React.ReactNode;

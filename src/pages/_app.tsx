@@ -20,10 +20,10 @@ function useNormalScrollRoutes() {
 
   useEffect(() => {
     router.events.on("routeChangeStart", () => {
-      document.documentElement.classList.add("route-change-scroll-disabled");
+      document.documentElement.classList.add("!scroll-auto");
     });
     router.events.on("routeChangeComplete", () => {
-      document.documentElement.classList.remove("route-change-scroll-disabled");
+      document.documentElement.classList.remove("!scroll-auto");
     });
   });
 }

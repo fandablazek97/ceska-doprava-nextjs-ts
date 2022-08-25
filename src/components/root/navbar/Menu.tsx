@@ -1,3 +1,4 @@
+import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import { useEffect, useState } from "react";
 import MenuAdditionalLinks from "./MenuAdditionalLinks";
@@ -58,6 +59,13 @@ export default function Menu({ className = "" }: MenuOptions) {
             className={`transform-gpu transition-[transform,opacity] ease-out ${
               isOpen
                 ? "translate-y-0 opacity-100 delay-300 duration-500"
+                : "duration-0 -translate-y-12 opacity-0 delay-150"
+            }`}
+          />
+          <SocialLinks
+            className={`transform-gpu transition-[transform,opacity] ease-out ${
+              isOpen
+                ? "translate-y-0 opacity-100 delay-[450ms] duration-500"
                 : "duration-0 -translate-y-12 opacity-0 delay-150"
             }`}
           />

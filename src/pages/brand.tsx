@@ -38,18 +38,18 @@ const BrandPage: NextPage = () => {
           voluptates optio provident reprehenderit molestias voluptatibus itaque
           eos, a inventore quos!
         </p>
-        <div className="flex flex-col gap-10 py-16 sm:flex-row">
-          <div className="flex aspect-square w-full items-end justify-start bg-secondary p-3 md:p-6">
+        <div className="grid grid-cols-1 gap-10 py-16 xs:grid-cols-2 md:grid-cols-3">
+          <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-secondary p-3 md:p-6">
             <span className="c-link-3-a block text-xl font-semibold text-white">
               #8D2C82
             </span>
           </div>
-          <div className="flex aspect-square w-full items-end justify-start bg-primary p-3 md:p-6">
+          <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-primary p-3 md:p-6">
             <span className="c-link-3-a block text-xl font-semibold text-gray-900">
               #D957DB
             </span>
           </div>
-          <div className="flex aspect-square w-full items-end justify-start bg-body p-3 shadow-[inset_0px_0px_0px_2px] shadow-gray-200 md:p-6">
+          <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-body p-3 shadow-[inset_0px_0px_0px_2px] shadow-gray-200 md:p-6">
             <span className="c-link-3-a block text-xl font-semibold text-white">
               #211033
             </span>

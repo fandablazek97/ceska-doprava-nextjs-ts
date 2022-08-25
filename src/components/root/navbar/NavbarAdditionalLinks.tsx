@@ -10,7 +10,9 @@ export default function NavbarAdditionalLinks({
   className = "",
 }: NavbarAdditionalLinksOptions) {
   return (
-    <div className={`flex items-center gap-x-6 md:gap-x-10 ${className}`}>
+    <div
+      className={`flex items-center gap-x-6 md:gap-x-10 2xl:gap-x-16 ${className}`}
+    >
       <SocialLinks className="hidden lg:block" />
       <Button
         as="a"

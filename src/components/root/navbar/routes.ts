@@ -1,14 +1,10 @@
 export const mainRoutes = [
   {
     label: "Domů",
-    path: "/#reveal-app",
+    path: "/",
   },
   {
-    label: "Komponenty",
-    path: "/components",
-  },
-  {
-    label: "Program",
+    label: "Program a mapa",
     path: "/program",
   },
   {
@@ -19,11 +15,15 @@ export const mainRoutes = [
 
 export const ctaMenu = [
   {
+    label: "Facebook událost",
+    link: "https://facebook.com",
+  },
+  {
     label: "+420 123 456 789",
     link: "tel:+420123456789",
   },
   {
-    label: "info@fotofestplzen.cz",
+    label: "Info@fotofestplzen.cz",
     link: "mailto:info@fotofestplzen.cz",
   },
 ];
