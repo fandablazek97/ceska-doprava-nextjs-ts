@@ -31,7 +31,7 @@ export default function Newsletter() {
       theme: "colored",
     });
   // Ref
-  const refHoneypot = useRef(null);
+  const refHoneypot = useRef<HTMLInputElement>(null);
 
   // State
   const [isLoading, setIsLoading] = useState(false);
@@ -41,7 +41,7 @@ export default function Newsletter() {
     e.preventDefault();
     setIsLoading(true);
 
-    var honeypot = refHoneypot.current.value;
+    var honeypot = refHoneypot.current?.value;
 
     if (honeypot === "" || honeypot === null) {
       emailjs
@@ -68,7 +68,7 @@ export default function Newsletter() {
     }
   }
   return (
-    <div className="grid w-full grid-cols-1 gap-10 bg-secondary py-32 px-11 md:grid-cols-2">
+    <div className="grid w-full grid-cols-1 gap-10 bg-secondary py-32 px-6 sm:px-11 lg:grid-cols-2">
       <div className="col-span-1">
         <Heading level={2} size="lg" font="display" className="uppercase">
           Odebírej novinky, ať ti nic neuteče!
@@ -81,9 +81,9 @@ export default function Newsletter() {
       <form
         onSubmit={sendEmail}
         aria-label="Odběr novinek"
-        className="col-span-1 flex items-start justify-start gap-5"
+        className="col-span-1 flex flex-col items-start justify-start gap-5 sm:flex-row"
       >
-        <div>
+        <div className="w-full">
           {/* Honeypot - anti spam */}
           <div className="lib-input-hp">
             <input

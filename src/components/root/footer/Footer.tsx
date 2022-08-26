@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="col-span-1 flex flex-col items-center justify-center gap-8 text-center md:items-start md:justify-start md:text-left">
           <BrandLogo />
           <span className="block">
-            Copyright © {new Date().getFullYear()} Reveal
+            Copyright © {new Date().getFullYear()} Fotofestplzen.cz
           </span>
           <SocialLinks />
         </div>

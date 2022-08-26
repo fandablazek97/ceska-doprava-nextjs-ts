@@ -58,6 +58,7 @@ export default function Contact() {
                 as="a"
                 href="https://facebook.com"
                 target="blank"
+                aria-label="Facebook"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -68,6 +69,7 @@ export default function Contact() {
                 as="a"
                 href="https://facebook.com"
                 target="blank"
+                aria-label="Instagram"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -78,6 +80,7 @@ export default function Contact() {
                 as="a"
                 href="https://facebook.com"
                 target="blank"
+                aria-label="Youtube"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -88,6 +91,7 @@ export default function Contact() {
                 as="a"
                 href="https://facebook.com"
                 target="blank"
+                aria-label="Spotify"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -118,6 +122,7 @@ export default function Contact() {
             </span>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
               <Button
+                aria-label="Zkopírování adresy místa konání"
                 onClick={() => {
                   notify();
                   copy("Presslova 14, 301 00 Plzeň 3-Jižní Předměstí");
@@ -132,6 +137,7 @@ export default function Contact() {
                 as="a"
                 href="https://www.google.com/maps/dir//DEPO2015,+Presslova+14,+301+00+Plzeň+3-Jižn%C3%AD+Předměst%C3%AD/@49.7385211,13.3792283,17z/data=!3m1!5s0x470af1e1c2de49bb:0x5b63353c5a91cad6!4m9!4m8!1m0!1m5!1m1!1s0x470af1e1db0327df:0xe07126f9b5cb10fe!2m2!1d13.3814223!2d49.7385177!3e0"
                 target="blank"
+                aria-label="Navigace na místo konání pomocí google map"
                 type="filled"
                 isIconBox={true}
                 shape="pill"
@@ -142,6 +148,7 @@ export default function Contact() {
                 as="a"
                 href="https://www.depo2015.cz"
                 target="blank"
+                aria-label="Webová stránka Depo 2015"
                 type="filled"
                 isIconBox={true}
                 shape="pill"
@@ -156,6 +163,7 @@ export default function Contact() {
       {/* Mapa */}
       <Wrapper size="lg" className="mt-8 md:mt-14">
         <iframe
+          title="Místo konání festivalu"
           src="https://maps.google.com/maps?q=depo%202015%20Plze%C5%88&t=k&z=15&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
           scrolling="no"

@@ -36,7 +36,7 @@ export default function Navbar() {
     //       : "h-20 border-opacity-0 bg-opacity-0 md:h-28"
     //   } ${isNavbarVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     // >
-    <nav className={`fixed z-[100] h-20 w-screen bg-body/80 backdrop-blur`}>
+    <nav className={`fixed z-[100] h-20 w-screen bg-body/70 backdrop-blur-lg`}>
       <Wrapper
         size="lg"
         className="flex h-full items-center justify-between gap-6 md:gap-10 xl:gap-16"
@@ -44,8 +44,8 @@ export default function Navbar() {
         <NavbarMainLinks className="hidden lg:flex" />
         <Menu className="lg:hidden" />
         <Link href="/">
-          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px]">
-            <BrandLogo className="origin-left scale-[0.8] sm:scale-100" />
+          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
+            <BrandLogo className="origin-left" />
           </a>
         </Link>
         <NavbarAdditionalLinks />

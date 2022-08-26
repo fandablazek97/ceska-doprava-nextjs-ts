@@ -18,6 +18,7 @@ export default function SocialLinks({
         <li>
           <a
             href="https://facebook.com"
+            aria-label="Facebook"
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -28,6 +29,7 @@ export default function SocialLinks({
         <li>
           <a
             href="https://facebook.com"
+            aria-label="Instagram"
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -38,6 +40,7 @@ export default function SocialLinks({
         <li>
           <a
             href="https://facebook.com"
+            aria-label="Youtube"
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -48,6 +51,7 @@ export default function SocialLinks({
         <li>
           <a
             href="https://facebook.com"
+            aria-label="Spotify"
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"

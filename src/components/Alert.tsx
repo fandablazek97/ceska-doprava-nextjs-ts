@@ -63,28 +63,32 @@ export default function Alert({
     >
       <div className="mr-auto flex flex-col items-start justify-start gap-5 sm:flex-row">
         {hasIcon && status === "success" && (
-          <div className="sm:pt-1">
+          <div className="hidden sm:block sm:pt-1">
             <HiCheckCircle className="text-3xl" />
           </div>
         )}
         {hasIcon && status === "error" && (
-          <div className="sm:pt-1">
+          <div className="hidden sm:block sm:pt-1">
             <HiXCircle className="text-3xl" />
           </div>
         )}
         {hasIcon && status === "warning" && (
-          <div className="sm:pt-1">
+          <div className="hidden sm:block sm:pt-1">
             <HiExclamationCircle className="text-3xl" />
           </div>
         )}
         {hasIcon && status === "info" && (
-          <div className="sm:pt-1">
+          <div className="hidden sm:block sm:pt-1">
             <HiInformationCircle className="text-3xl" />
           </div>
         )}
         <div>
-          <span className="text-lg font-semibold sm:text-xl">{title}</span>
-          {(text !== null || text !== undefined) && <p>{text}</p>}
+          <span className="text-lg font-semibold leading-tight sm:text-xl">
+            {title}
+          </span>
+          {(text !== null || text !== undefined) && (
+            <p className="text-sm sm:text-base">{text}</p>
+          )}
         </div>
       </div>
       {isDismissable && (

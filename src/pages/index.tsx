@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         <Faq />
       </Wrapper>
 
-      <Wrapper as={"section"} paddedContent="base">
+      <Wrapper as={"section"} paddedContent="base" className="mb-24">
         <Partners />
       </Wrapper>
     </>

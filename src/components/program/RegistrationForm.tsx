@@ -38,7 +38,7 @@ const workshops = [
 
 export default function RegistrationForm({ className = "" }: Props) {
   // Ref
-  const refHoneypot = useRef(null);
+  const refHoneypot = useRef<HTMLInputElement>(null);
 
   // State
   const [mailSent, setmailSent] = useState(false);
@@ -50,7 +50,7 @@ export default function RegistrationForm({ className = "" }: Props) {
     e.preventDefault();
     setIsLoading(true);
 
-    var honeypot = refHoneypot.current.value;
+    var honeypot = refHoneypot.current?.value;
 
     if (honeypot === "" || honeypot === null) {
       emailjs

@@ -1,6 +1,6 @@
 type HeadingOptions = {
   level: 1 | 2 | 3 | 4 | 5 | 6;
-  size: "sm" | "base" | "lg" | "xl" | "2xl" | "none";
+  size: "sm" | "base" | "lg" | "xl" | "2xl" | "3xl" | "none";
   color?:
     | "rich"
     | "muted"
@@ -36,6 +36,7 @@ const sizeClasses = {
   lg: "text-2xl xs:text-3xl lg:text-4xl",
   xl: "text-3xl xs:text-4xl lg:text-6xl",
   "2xl": "text-3xl xs:text-4xl sm:text-5xl lg:text-7xl",
+  "3xl": "text-4xl xs:text-5xl sm:text-7xl lg:text-9xl",
   none: "",
 };
 

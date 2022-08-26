@@ -62,6 +62,7 @@ const ProgramPage: NextPage = () => {
             src="/images/conf.jpg"
             alt="Mapa areálu festivalu"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
         </div>
       </Wrapper>

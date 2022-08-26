@@ -16,8 +16,8 @@ const sizeClasses = {
 
 const paddedContentClasses = {
   sm: "py-16 xl:py-24",
-  base: "py-28 xl:py-36",
-  lg: "py-32 xl:py-52",
+  base: "py-24 xl:py-32",
+  lg: "py-32 xl:py-44",
   none: "",
 };
 

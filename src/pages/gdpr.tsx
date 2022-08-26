@@ -1,5 +1,5 @@
 import GdprPolicy from "@components/gdpr/GdprPolicy";
-import MainHeading from "@components/MainHeading";
+import Heading from "@components/Heading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
@@ -8,12 +8,18 @@ const GdprPage: NextPage = () => {
   return (
     <>
       <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
-      <Wrapper paddedContent="sm">
-        <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
+      <Wrapper className="pt-24 md:pb-16 md:pt-36">
+        <Heading
+          level={1}
+          size="3xl"
+          font="display"
+          className="pt-20 md:pt-32"
+          align="center"
+        >
           Zpracování osobních údajů
-        </MainHeading>
+        </Heading>
       </Wrapper>
-      <Wrapper paddedContent="base">
+      <Wrapper size="sm" className="pt-24 pb-40">
         <GdprPolicy
           ownerName="Jakub Flaišman"
           adress="Na Belánce 14"

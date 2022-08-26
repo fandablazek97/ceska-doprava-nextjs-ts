@@ -17,7 +17,7 @@ export default function MenuAdditionalLinks({
         <li key={item.label}>
           <a
             href={item.link}
-            className="c-link-3-b text-lg font-semibold text-primary xl:text-2xl"
+            className="c-link-3-a text-lg font-semibold text-primary xl:text-2xl"
             onClick={onEachLinkClick}
           >
             {item.label}

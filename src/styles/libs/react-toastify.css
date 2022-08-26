@@ -253,7 +253,7 @@
   transform-origin: left;
 }
 .Toastify__progress-bar--animated {
-  animation: Toastify__trackProgress linear 1 forwards;
+  animation: Toastify__trackProgress cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
 }
 .Toastify__progress-bar--controlled {
   transition: transform 0.2s;
