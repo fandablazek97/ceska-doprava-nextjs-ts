@@ -6,3 +6,4 @@
 @import "components/components.css";
 @import "components/text-formatter.css";
 @import "helpers/scroll-lock.css";
+@import "libs/react-toastify.css";

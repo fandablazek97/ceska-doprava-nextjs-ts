@@ -1,5 +1,5 @@
 import Heading from "@components/Heading";
-import ProgramRegistrations from "./ProgramRegistrations";
+import RegistrationModal from "./RegistrationModal";
 
 type Props = {
   speaker: string;
@@ -36,9 +36,13 @@ export default function ProgramCard({
       <span className="text-center text-lg leading-tight tracking-widest text-gray-400">
         {time}
       </span>
-      {hasRegistration && !isPaid && <ProgramRegistrations />}
+      {hasRegistration && !isPaid && <RegistrationModal />}
       {hasRegistration && isPaid && (
-        <a href={shopLink} target="blank" className="c-link-3-a text-primary">
+        <a
+          href={shopLink}
+          target="blank"
+          className="c-link-3-a text-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
+        >
           Koupit vstupenku
         </a>
       )}

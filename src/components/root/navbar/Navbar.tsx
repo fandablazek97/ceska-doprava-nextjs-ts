@@ -44,7 +44,7 @@ export default function Navbar() {
         <NavbarMainLinks className="hidden lg:flex" />
         <Menu className="lg:hidden" />
         <Link href="/">
-          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 sm:max-w-[160px]">
+          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px]">
             <BrandLogo className="origin-left scale-[0.8] sm:scale-100" />
           </a>
         </Link>

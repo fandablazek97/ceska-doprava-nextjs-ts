@@ -8,7 +8,7 @@ export default function FooterAuthor({ className = "" }: FooterAuthorOptions) {
       href="https://reveal.cz"
       target="_blank"
       rel="noreferrer author external"
-      className={`my-2 min-w-[161px] self-center rounded-md bg-black py-3 px-5 text-xs font-bold tracking-widest text-white transition-shadow focus-visible:ring-4 focus-visible:ring-gray-700/70 ${className}`}
+      className={`my-2 min-w-[161px] self-center rounded-md bg-black py-3 px-5 text-xs font-bold tracking-widest text-white outline-none transition-shadow focus-visible:ring-4 focus-visible:ring-primary/70 ${className}`}
     >
       <img
         src="/svg/reveal-logo-signature.svg"

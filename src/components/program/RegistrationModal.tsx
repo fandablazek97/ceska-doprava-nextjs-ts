@@ -1,7 +1,10 @@
+import Button from "@components/Button";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import { MdClose } from "react-icons/md";
+import RegistrationForm from "./RegistrationForm";
 
-export default function ProgramRegistrations() {
+export default function RegistrationModal() {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -18,14 +21,18 @@ export default function ProgramRegistrations() {
         <button
           type="button"
           onClick={openModal}
-          className="c-link-3-a text-primary"
+          className="c-link-3-a text-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
         >
-          Zaregistrovat
+          Registrovat se
         </button>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog
+          as="div"
+          className="absolute inset-0 z-[200] h-screen w-screen"
+          onClose={closeModal}
+        >
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -49,29 +56,28 @@ export default function ProgramRegistrations() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-body-100 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-3xl transform overflow-y-auto rounded-2xl bg-body-100 p-6 text-left shadow-xl transition-all md:p-12">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-rich"
+                    className="mb-6 text-2xl font-bold leading-6 text-rich md:text-3xl lg:text-4xl"
                   >
-                    Registrace
+                    Registrace na workshopy
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-muted">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Hic quidem inventore quaerat distinctio vero possimus,
-                      ipsum esse quo voluptates temporibus.
-                    </p>
-                  </div>
+                  <p className="mb-10">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus, ducimus.
+                  </p>
+                  <RegistrationForm />
 
                   <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    <Button
+                      rightIcon={<MdClose />}
+                      color={"light"}
                       onClick={closeModal}
+                      className="w-full sm:w-auto"
                     >
-                      Registrovat
-                    </button>
+                      Zavřít
+                    </Button>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

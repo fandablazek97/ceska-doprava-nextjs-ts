@@ -29,28 +29,28 @@ export default function Footer() {
           <ul className="mt-2 space-y-1">
             <li>
               <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Hlavní strana
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Program
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Link label
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Link label
                 </a>
               </Link>
@@ -66,21 +66,21 @@ export default function Footer() {
           <ul className="mt-2 space-y-1">
             <li>
               <Link href="/cookies">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Cookies
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/gdpr">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Zpracování osobních údajů
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/brand">
-                <a className="c-link-3-a text-base font-medium text-muted">
+                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Firemní identita značky
                 </a>
               </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
             <li>
               <a
                 href="tel:tel:+420775554479"
-                className="c-link-3-a text-base font-medium text-muted"
+                className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
                 +420 775 554 479
               </a>
@@ -108,7 +108,7 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:info@fotofestplzen.cz"
-                className="c-link-3-a text-base font-medium text-muted"
+                className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
                 Info@fotofestplzen.cz
               </a>

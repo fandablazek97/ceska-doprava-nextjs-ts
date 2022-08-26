@@ -14,11 +14,12 @@ export default function SocialLinks({
   // Logic goes here
   return (
     <Tag className={`${className}`} {...rest}>
-      <ul className="flex gap-x-8">
+      <ul className="flex gap-x-10">
         <li>
           <a
             href="https://facebook.com"
             target="blank"
+            rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaFacebookF />
@@ -28,6 +29,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
+            rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaInstagram />
@@ -37,6 +39,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
+            rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaYoutube />
@@ -46,6 +49,7 @@ export default function SocialLinks({
           <a
             href="https://facebook.com"
             target="blank"
+            rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaSpotify />

@@ -2,10 +2,10 @@ import { Dialog as Modal, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
 // Icons
-import { BsFillPlayFill } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
+import RegistrationForm from "./RegistrationForm";
 
-export default function Aftermovie() {
+export default function RegModal() {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -17,30 +17,14 @@ export default function Aftermovie() {
   }
 
   return (
-    <section id="aftermovie">
+    <>
       <button
-        className="group relative aspect-[16/9] w-full cursor-pointer bg-slate-700/50 focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
+        type="button"
         onClick={openModal}
+        className="c-link-3-a text-primary"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          className="h-full w-full object-cover opacity-50"
-        >
-          <source src="/ffp-19-preview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="z-1 absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2">
-          <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-transparent">
-            <BsFillPlayFill className="z-10 text-3xl text-body" />
-            <div className="absolute inset-0 -z-10 h-16 w-16 rounded-full bg-white transition-transform duration-300 ease-out-back group-hover:scale-125"></div>
-          </div>
-        </div>
+        Zaregistrovat
       </button>
-      <span className="pt-8 text-xs font-medium uppercase tracking-wider">
-        Přehrát Aftermovie
-      </span>
 
       {/* Samotný modal */}
       <Transition show={isOpen} as={Fragment}>
@@ -59,7 +43,7 @@ export default function Aftermovie() {
             leaveTo="opacity-0"
           >
             {/* Overlay */}
-            <Modal.Overlay className="fixed inset-0 z-[200] h-screen w-screen bg-body bg-opacity-80 backdrop-blur-md" />
+            <Modal.Overlay className="fixed inset-0 z-[200] h-screen w-screen bg-body/80 backdrop-blur-md" />
           </Transition.Child>
 
           <Transition.Child
@@ -71,21 +55,25 @@ export default function Aftermovie() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-90"
           >
-            {/* Obsah modalu - container pro obrázek */}
-            <div className="relative top-1/2 bottom-1/2 z-[200] mx-auto w-[90%] max-w-6xl -translate-y-1/2 transform">
-              <div className="aspect-[16/9]">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/bUianikiilw"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  className="h-full w-full bg-gray-400"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+            <Modal.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-body-100 p-6 text-left align-middle shadow-xl transition-all">
+              <Modal.Title
+                as="h3"
+                className="text-lg font-medium leading-6 text-rich"
+              >
+                Registrace
+              </Modal.Title>
+              <RegistrationForm />
+
+              <div className="mt-4">
+                <button
+                  type="button"
+                  className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                  onClick={closeModal}
+                >
+                  Registrovat
+                </button>
               </div>
-            </div>
+            </Modal.Panel>
           </Transition.Child>
 
           <Transition.Child
@@ -109,6 +97,6 @@ export default function Aftermovie() {
           </Transition.Child>
         </Modal>
       </Transition>
-    </section>
+    </>
   );
 }

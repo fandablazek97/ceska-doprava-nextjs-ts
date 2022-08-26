@@ -12,7 +12,7 @@ const ProgramPage: NextPage = () => {
   return (
     <>
       <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
-      <Wrapper paddedContent="sm">
+      <Wrapper as={"header"} paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Program
         </MainHeading>
@@ -30,12 +30,12 @@ const ProgramPage: NextPage = () => {
         </div>
       </Wrapper>
 
-      <Wrapper paddedContent="sm">
+      <Wrapper as={"section"} id="program" paddedContent="sm">
         <Program />
         <ProgramDesktop className="mt-10" />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="mapa" paddedContent="base">
         <Heading level={2} size="xl" font="display">
           Mapa areálu
         </Heading>

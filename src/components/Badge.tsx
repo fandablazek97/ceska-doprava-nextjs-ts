@@ -1,7 +1,7 @@
 type BadgeOptions = {
   children: string;
   as?: React.ElementType;
-  type?: "filled" | "tinted" | "outlined";
+  variant?: "filled" | "tinted" | "outlined";
   color?:
     | "primary"
     | "secondary"
@@ -25,7 +25,7 @@ type BadgeOptions = {
 };
 
 // Type classes
-const typeClasses = {
+const variantClasses = {
   filled: "text-opacity-90",
   tinted: "bg-opacity-15",
   outlined: "shadow-[inset_0px_0px_0px_1.5px] bg-opacity-0",
@@ -91,7 +91,7 @@ const sizeClasses = {
 
 export default function Badge({
   as: Tag = "span",
-  type = "tinted",
+  variant = "tinted",
   color = "primary",
   shape = "pill",
   size = "sm",
@@ -106,10 +106,10 @@ export default function Badge({
   return (
     <Tag
       className={`inline-flex items-center justify-center font-medium leading-none tracking-wide no-underline 
-      ${typeClasses[type]}
-      ${type === "filled" ? filledColorClasses[color] : ""} 
-      ${type === "tinted" ? tintedColorClasses[color] : ""} 
-      ${type === "outlined" ? outlinedColorClasses[color] : ""} 
+      ${variantClasses[variant]}
+      ${variant === "filled" ? filledColorClasses[color] : ""} 
+      ${variant === "tinted" ? tintedColorClasses[color] : ""} 
+      ${variant === "outlined" ? outlinedColorClasses[color] : ""} 
       ${shapeClasses[shape]} ${sizeClasses[size]}
       ${className}
       `}

@@ -3,10 +3,18 @@ import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
+// import useClipboard from "@hooks/useClipboard";
+import copy from "copy-to-clipboard";
 import type { NextPage } from "next";
 import { HiDownload } from "react-icons/hi";
+import { toast } from "react-toastify";
 
 const BrandPage: NextPage = () => {
+  const notify = () => toast("Kód barvy byl zkopírován do schránky");
+  // const [isPrimaryCopied, setPrimaryCopied] = useClipboard("#D957DB");
+  // const [isSecondaryCopied, setSecondaryCopied] = useClipboard("#8D2C82");
+  // const [isDarkCopied, setDarkCopied] = useClipboard("#211033");
+
   return (
     <>
       <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
@@ -40,17 +48,35 @@ const BrandPage: NextPage = () => {
         </p>
         <div className="grid grid-cols-1 gap-10 py-16 xs:grid-cols-2 md:grid-cols-3">
           <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-secondary p-3 md:p-6">
-            <span className="c-link-3-a block text-xl font-semibold text-white">
+            <span
+              onClick={() => {
+                notify();
+                copy("#8D2C82");
+              }}
+              className="c-link-3-a block text-xl font-semibold text-white"
+            >
               #8D2C82
             </span>
           </div>
           <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-primary p-3 md:p-6">
-            <span className="c-link-3-a block text-xl font-semibold text-gray-900">
+            <span
+              onClick={() => {
+                notify();
+                copy("#D957DB");
+              }}
+              className="c-link-3-a block text-xl font-semibold text-gray-900"
+            >
               #D957DB
             </span>
           </div>
           <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-body p-3 shadow-[inset_0px_0px_0px_2px] shadow-gray-200 md:p-6">
-            <span className="c-link-3-a block text-xl font-semibold text-white">
+            <span
+              onClick={() => {
+                notify();
+                copy("#211033");
+              }}
+              className="c-link-3-a block text-xl font-semibold text-white"
+            >
               #211033
             </span>
           </div>

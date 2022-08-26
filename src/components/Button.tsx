@@ -7,7 +7,7 @@ import { CgSpinner } from "react-icons/cg";
 type ButtonOptions = {
   children: string;
   as?: React.ElementType;
-  type?: "filled" | "tinted" | "outlined" | "plain";
+  variant?: "filled" | "tinted" | "outlined" | "plain";
   color?:
     | "primary"
     | "secondary"
@@ -34,8 +34,8 @@ type ButtonOptions = {
 
 export type Ref = HTMLButtonElement;
 
-// Type classes
-const typeClasses = {
+// Variant classes
+const variantClasses = {
   filled: "text-opacity-95",
   tinted:
     "bg-opacity-10 dark:bg-opacity-10 hover:bg-opacity-25 dark:hover:bg-opacity-25",
@@ -45,7 +45,7 @@ const typeClasses = {
     "bg-opacity-0 dark:bg-opacity-0 hover:bg-opacity-10 dark:hover:bg-opacity-10",
 };
 
-// Filled type color classes
+// Filled variant color classes
 const filledColorClasses = {
   primary: "bg-primary text-white",
   secondary: "bg-secondary text-white",
@@ -153,7 +153,7 @@ const Button = forwardRef<Ref, ButtonOptions>(
   (
     {
       as: Tag = "button",
-      type = "filled",
+      variant = "filled",
       color = "primary",
       shape = "square",
       size = "base",
@@ -172,11 +172,11 @@ const Button = forwardRef<Ref, ButtonOptions>(
     <Tag
       ref={ref}
       className={`group relative isolate inline-flex items-center justify-center overflow-hidden font-semibold leading-none tracking-wide no-underline outline-none transition-colors duration-200 will-change-transform 
-      ${typeClasses[type]}
-      ${type === "filled" ? filledColorClasses[color] : ""} 
-      ${type === "tinted" ? tintedColorClasses[color] : ""} 
-      ${type === "outlined" ? outlinedColorClasses[color] : ""}
-      ${type === "plain" ? plainColorClasses[color] : ""}
+      ${variantClasses[variant]}
+      ${variant === "filled" ? filledColorClasses[color] : ""} 
+      ${variant === "tinted" ? tintedColorClasses[color] : ""} 
+      ${variant === "outlined" ? outlinedColorClasses[color] : ""}
+      ${variant === "plain" ? plainColorClasses[color] : ""}
       ${shapeClasses[shape]} ${focusClasses[color]}
       ${isIconBox ? sizeIconBoxClasses[size] : sizeClasses[size]}
       ${
@@ -201,7 +201,7 @@ const Button = forwardRef<Ref, ButtonOptions>(
       )}
 
       {/* Hover for filled type */}
-      {type === "filled" && (
+      {variant === "filled" && (
         <span
           className={`absolute inset-0 z-[-1] opacity-0 transition-opacity duration-200 group-hover:opacity-20 ${
             color === "dark" ? "bg-gray-400" : "bg-gray-900"

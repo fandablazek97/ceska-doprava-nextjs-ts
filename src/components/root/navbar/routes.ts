@@ -8,6 +8,10 @@ export const mainRoutes = [
     path: "/program",
   },
   {
+    label: "FAQ",
+    path: "/#faq",
+  },
+  {
     label: "Kontakt",
     path: "/#kontakt",
   },

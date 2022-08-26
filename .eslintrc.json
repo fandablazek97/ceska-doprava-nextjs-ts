@@ -4,7 +4,6 @@
     "React": "readonly"
   },
   "rules": {
-    "@next/next/no-img-element": "off",
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+    "@next/next/no-img-element": "off"
   }
 }

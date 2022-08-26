@@ -161,3 +161,8 @@
     }
   }
 }
+
+.lib-input-hp {
+  display: none;
+  visibility: hidden;
+}

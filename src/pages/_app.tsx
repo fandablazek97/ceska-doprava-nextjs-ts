@@ -2,6 +2,7 @@ import AppLayout from "@layouts/AppLayout";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
 
 // Fonts
 import "@fontsource/bebas-neue";
@@ -13,6 +14,8 @@ import "@fontsource/inter/800.css";
 
 // Styles
 import "../styles/main.css";
+
+// Toast
 
 // Disable smooth scroll on route change: https://github.com/vercel/next.js/issues/20125#issuecomment-757547865
 function useNormalScrollRoutes() {
@@ -33,6 +36,17 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppLayout>
       <Component {...pageProps} />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </AppLayout>
   );
 }

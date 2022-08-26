@@ -12,7 +12,7 @@ type AlertOptions = {
   title: string;
   text?: string;
   status?: "success" | "error" | "warning" | "info";
-  type?: "filled" | "tinted";
+  variant?: "filled" | "tinted";
   hasIcon?: boolean;
   isDismissable?: boolean;
   isVisible?: boolean;
@@ -21,10 +21,10 @@ type AlertOptions = {
 };
 
 const filledStatusClasses = {
-  success: "bg-success text-invert",
-  error: "bg-error text-invert",
-  warning: "bg-warning text-invert",
-  info: "bg-info text-invert",
+  success: "bg-success text-white",
+  error: "bg-error text-white",
+  warning: "bg-warning text-white",
+  info: "bg-info text-white",
 };
 
 const tintedStatusClasses = {
@@ -39,7 +39,7 @@ export default function Alert({
   title = "This is alert message",
   text,
   status = "info",
-  type = "filled",
+  variant = "filled",
   hasIcon = true,
   isDismissable = true,
   isVisible = true,
@@ -55,7 +55,7 @@ export default function Alert({
   return isShown ? (
     <Tag
       className={`flex w-full items-start justify-between gap-5 rounded-lg py-6 px-5 ${
-        type === "filled"
+        variant === "filled"
           ? filledStatusClasses[status]
           : tintedStatusClasses[status]
       } ${className}`}

@@ -2,6 +2,8 @@ import Button from "@components/Button";
 import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Wrapper from "@components/Wrapper";
+import copy from "copy-to-clipboard";
+import { toast } from "react-toastify";
 
 // Icons
 import {
@@ -14,9 +16,10 @@ import {
 import { HiDocumentDuplicate, HiPaperAirplane } from "react-icons/hi";
 
 export default function Contact() {
+  const notify = () => toast("Adresa byla zkopírována do schránky");
   return (
     <>
-      <Wrapper id="kontakt" paddedContent="sm">
+      <Wrapper as={"section"} id="kontakt" paddedContent="sm">
         <div className="lg:grid lg:grid-cols-7 lg:gap-32">
           <MainHeading level={2} number="04" size="2xl" className="col-span-2">
             Kontakt
@@ -32,13 +35,13 @@ export default function Contact() {
             <div className="mt-6 flex flex-col gap-2">
               <a
                 href="tel:+420775554479"
-                className="c-link-3-a text-lg font-medium text-white"
+                className="c-link-3-a text-lg font-medium text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
                 +420 775 554 479
               </a>
               <a
                 href="mailto:info@fotofestplzen.cz"
-                className="c-link-3-a text-lg font-medium text-white"
+                className="c-link-3-a text-lg font-medium text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
                 Info@fotofestplzen.cz
               </a>
@@ -114,7 +117,15 @@ export default function Contact() {
               Presslova 14, 301 00 Plzeň 3-Jižní Předměstí
             </span>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
-              <Button as="button" isIconBox={true} shape="pill">
+              <Button
+                onClick={() => {
+                  notify();
+                  copy("Presslova 14, 301 00 Plzeň 3-Jižní Předměstí");
+                }}
+                as="button"
+                isIconBox={true}
+                shape="pill"
+              >
                 <HiDocumentDuplicate />
               </Button>
               <Button

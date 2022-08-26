@@ -18,11 +18,11 @@ const Home: NextPage = () => {
     <>
       <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
       <Hero />
-      <Wrapper size="lg" paddedContent="none">
+      <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
         <Aftermovie />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} paddedContent="base">
         <MainHeading level={2} number="01" size="2xl">
           Hosté
         </MainHeading>
@@ -34,11 +34,11 @@ const Home: NextPage = () => {
         <Guests className="mt-20 md:mt-36" />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <Exhibitors />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="program" paddedContent="base">
         <MainHeading level={2} number="03" size="2xl">
           Program
         </MainHeading>
@@ -51,13 +51,13 @@ const Home: NextPage = () => {
         <ProgramDesktop className="mt-36" />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <Newsletter />
       </Wrapper>
 
       <Contact />
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="faq" paddedContent="base">
         <MainHeading level={2} number="01" size="2xl">
           Faq
         </MainHeading>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         <Faq />
       </Wrapper>
 
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} paddedContent="base">
         <Partners />
       </Wrapper>
     </>
