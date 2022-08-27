@@ -1,4 +1,5 @@
 import Aftermovie from "@components/home/Aftermovie";
+import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
 import Exhibitors from "@components/home/Exhibitors";
 import Faq from "@components/home/Faq";
@@ -68,6 +69,10 @@ const Home: NextPage = () => {
         </p>
         <Faq />
       </Wrapper>
+
+      <section className="py-24 xl:py-32">
+        <Carousel />
+      </section>
 
       <Wrapper as={"section"} paddedContent="base" className="mb-24">
         <Partners />
