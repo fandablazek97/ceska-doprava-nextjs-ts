@@ -1,6 +1,6 @@
 export const mainRoutes = [
   {
-    label: "Domů",
+    label: "Hlavní strana",
     path: "/",
   },
   {

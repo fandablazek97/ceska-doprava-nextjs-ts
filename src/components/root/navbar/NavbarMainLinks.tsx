@@ -15,7 +15,7 @@ export default function NavbarMainLinks({
       {mainRoutes.map((route) => (
         <li key={route.label}>
           <Link href={route.path}>
-            <a className="c-link-3-a text-sm font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70 lg:text-base">
+            <a className="c-link-3-a text-sm font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70 xl:text-base">
               {route.label}
             </a>
           </Link>

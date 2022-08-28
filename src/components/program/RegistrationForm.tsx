@@ -87,7 +87,7 @@ export default function RegistrationForm({ className = "" }: Props) {
         type="text"
         name="name"
         id="name"
-        label="Jméno a příjmení"
+        label="Jméno a příjmení *"
         isRequired={true}
       />
 
@@ -108,7 +108,7 @@ export default function RegistrationForm({ className = "" }: Props) {
           type="email"
           name="email"
           id="email"
-          label="E-mail"
+          label="E-mail *"
           isRequired={true}
           className="col-span-1"
         />
@@ -116,19 +116,19 @@ export default function RegistrationForm({ className = "" }: Props) {
           type="tel"
           name="phone"
           id="phone"
-          label="Telefon"
+          label="Telefon *"
           isRequired={true}
           className="col-span-1"
         />
       </div>
 
       <Select
-        label="Vybarte workshop"
+        label="Vyberte workshop"
         id="workshop"
         name="workshop"
         isRequired={true}
       >
-        <option value={""}>Vyberte jednu z možností</option>
+        <option value={""}>Vyberte jednu z možností *</option>
         {workshops.map((workshop) => (
           <option key={workshop.id} value={workshop.value}>
             {workshop.value}
@@ -151,7 +151,7 @@ export default function RegistrationForm({ className = "" }: Props) {
         label="gdpr"
         isRequired={true}
       >
-        Souhlasím se{" "}
+        * Souhlasím se{" "}
         <Link href={"/gdpr"}>
           <a className="c-link-3-a text-primary outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
             zpracováním osobních údajů.

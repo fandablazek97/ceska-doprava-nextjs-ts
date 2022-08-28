@@ -3,6 +3,7 @@ import Heading from "@components/Heading";
 import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
+import { mainRoutes } from "../navbar/routes";
 import FooterAuthor from "./FooterAuthor";
 
 export default function Footer() {
@@ -27,34 +28,15 @@ export default function Footer() {
             Navigace
           </Heading>
           <ul className="mt-2 space-y-1">
-            <li>
-              <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Hlavní strana
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Program
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Link label
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Link label
-                </a>
-              </Link>
-            </li>
+            {mainRoutes.map((route) => (
+              <li key={route.label}>
+                <Link href={route.path}>
+                  <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                    {route.label}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

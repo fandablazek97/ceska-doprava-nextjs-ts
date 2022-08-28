@@ -46,7 +46,7 @@ export default function Carousel({ className = "" }: Props) {
                 loading="lazy"
               />
             </div>
-            <span className="mt-4 block text-sm tracking-wider text-muted">
+            <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
@@ -63,7 +63,7 @@ export default function Carousel({ className = "" }: Props) {
                 loading="lazy"
               />
             </div>
-            <span className="mt-4 block text-sm tracking-wider text-muted">
+            <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
@@ -80,7 +80,7 @@ export default function Carousel({ className = "" }: Props) {
                 loading="lazy"
               />
             </div>
-            <span className="mt-4 block text-sm tracking-wider text-muted">
+            <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
@@ -97,26 +97,11 @@ export default function Carousel({ className = "" }: Props) {
                 loading="lazy"
               />
             </div>
-            <span className="mt-4 block text-sm tracking-wider text-muted">
+            <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className="h-full w-auto">
-          <div className="flex h-full flex-col items-start justify-start">
-            <Image
-              src={"/images/conf.jpg"}
-              alt={"Konference"}
-              width={1920}
-              height={1080}
-              className="aspect-video bg-gray-700 object-cover"
-              loading="lazy"
-            />
-            <span className="block tracking-wider text-muted">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </span>
-          </div>
-        </SwiperSlide> */}
       </Swiper>
     </>
   );

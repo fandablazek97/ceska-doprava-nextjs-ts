@@ -68,7 +68,7 @@ export default function Newsletter() {
     }
   }
   return (
-    <div className="grid w-full grid-cols-1 gap-10 bg-secondary py-32 px-6 sm:px-11 lg:grid-cols-2">
+    <div className="grid w-full grid-cols-1 gap-10 bg-secondary py-20 px-6 sm:px-11 lg:grid-cols-2 lg:py-36">
       <div className="col-span-1">
         <Heading level={2} size="lg" font="display" className="uppercase">
           Odebírej novinky, ať ti nic neuteče!
@@ -99,7 +99,7 @@ export default function Newsletter() {
             type="email"
             name="email"
             id="email"
-            label="E-mail"
+            label="E-mail *"
             isRequired={true}
           />
           <Checkbox
@@ -109,7 +109,7 @@ export default function Newsletter() {
             isRequired={true}
             className="mt-6"
           >
-            Souhlasím se{" "}
+            * Souhlasím se{" "}
             <Link href={"/gdpr"}>
               <a className="c-link-3-a text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                 zpracováním osobních údajů.

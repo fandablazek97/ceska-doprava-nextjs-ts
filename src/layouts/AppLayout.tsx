@@ -15,7 +15,7 @@ export default function AppLayout({ children }: AppShellOptions) {
         <Head />
         <Navbar />
       </header>
-      <main id="reveal-app">{children}</main>
+      <main id="main">{children}</main>
       <Footer />
     </>
   );

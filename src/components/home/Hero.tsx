@@ -7,20 +7,20 @@ export default function Hero() {
       className="flex h-[80vh] min-h-[640px] items-center justify-start lg:min-h-[728px]"
     >
       <div className="pt-52 pb-32">
-        <div className="flex items-start justify-start">
-          <h1 className="mr-2 font-display text-4xl font-semibold uppercase leading-[1.2] text-white xs:text-5xl sm:text-7xl lg:text-9xl">
+        <div className="anim-slide-up reveal-delay-300 flex items-start justify-start">
+          <h1 className="mr-2 font-display text-4xl font-semibold uppercase leading-[1.2] text-white xs:text-5xl sm:text-7xl lg:text-9xl 2xl:text-[11rem]">
             Foto fest Plzeň
           </h1>
-          <span className="font-display text-base font-normal text-primary xs:text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <span className="font-display text-base font-normal text-primary xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
             2022
           </span>
         </div>
-        <p className="mt-2 max-w-3xl text-base font-medium md:text-xl">
+        <p className="anim-slide-up reveal-delay-600 mt-2 max-w-3xl text-base font-medium md:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
         </p>
         <div className="mt-8 flex flex-col gap-5 md:mt-16 md:flex-row md:gap-14">
-          <div className="flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-800 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Datum
             </span>
@@ -28,7 +28,7 @@ export default function Hero() {
               1.10. 2022
             </span>
           </div>
-          <div className="flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-900 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Místo konání
             </span>
@@ -36,7 +36,7 @@ export default function Hero() {
               Depo 2015, Plzeň
             </span>
           </div>
-          <div className="flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Vstupné
             </span>
