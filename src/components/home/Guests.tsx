@@ -24,8 +24,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
+              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineCamera className="text-3xl text-primary lg:text-4xl" />
@@ -38,8 +38,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
+              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineVideoCamera className="text-3xl text-primary lg:text-4xl" />
@@ -52,8 +52,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary"
+              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineLightningBolt className="text-3xl text-primary lg:text-4xl" />
@@ -70,37 +70,45 @@ export default function Guests({ className = "" }: Props) {
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
         <Tab.Panel
           className={
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
         <Tab.Panel
           className={
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
-          <GuestCard />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
+          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>

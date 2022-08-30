@@ -50,7 +50,7 @@ export default function SlideUp({
   children,
   ...rest
 }: SlideUpOptions) {
-  const [element, view] = useInView({ threshold: 0.3, triggerOnce: true });
+  const [element, view] = useInView({ threshold: 0.2, triggerOnce: true });
   return (
     <Tag
       ref={element}

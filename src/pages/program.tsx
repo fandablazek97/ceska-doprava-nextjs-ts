@@ -1,3 +1,4 @@
+import Alert from "@components/Alert";
 import Button from "@components/Button";
 import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
@@ -11,7 +12,7 @@ import { HiDownload } from "react-icons/hi";
 const ProgramPage: NextPage = () => {
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo title="Program a mapa" description="Lorem ipsum dolor sit amet" />
       <Wrapper as={"header"} paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Program
@@ -31,8 +32,16 @@ const ProgramPage: NextPage = () => {
       </Wrapper>
 
       <Wrapper as={"section"} id="program" paddedContent="sm">
-        <Program />
-        <ProgramDesktop className="mt-10" />
+        <Alert
+          status="info"
+          variant="filled"
+          hasIcon={false}
+          title="Výběr stage"
+          text="Stage lze horizontálně posouvat. Pro zobrazení programu z jiné stage stačí najet a kliknout na jinou"
+          className="block text-primary sm:hidden"
+        />
+        <Program className="mt-4 sm:mt-0" />
+        <ProgramDesktop hasBackground={false} className="mt-10" />
       </Wrapper>
 
       <Wrapper as={"section"} id="mapa" paddedContent="base">

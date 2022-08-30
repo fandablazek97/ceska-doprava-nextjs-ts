@@ -6,6 +6,7 @@ import copy from "copy-to-clipboard";
 import { toast } from "react-toastify";
 
 // Icons
+import SlideUp from "@components/scroll-reveal/SlideUp";
 import {
   FaFacebookF,
   FaGlobe,
@@ -21,11 +22,16 @@ export default function Contact() {
     <>
       <Wrapper as={"section"} id="kontakt" paddedContent="sm">
         <div className="lg:grid lg:grid-cols-7 lg:gap-32">
-          <MainHeading level={2} number="04" size="2xl" className="col-span-2">
-            Kontakt
-          </MainHeading>
+          <SlideUp as={"div"} className="col-span-2">
+            <MainHeading level={2} number="04" size="2xl">
+              Kontakt
+            </MainHeading>
+          </SlideUp>
           {/* Kontakt Kuba */}
-          <div className="col-span-2 mt-8 flex flex-col lg:mt-0">
+          <SlideUp
+            as={"div"}
+            className="lg:reveal-delay-200 col-span-2 mt-8 flex flex-col lg:mt-0"
+          >
             <Heading level={3} size="sm" font="display">
               Jakub Flaišman
             </Heading>
@@ -46,12 +52,15 @@ export default function Contact() {
                 Info@fotofestplzen.cz
               </a>
             </div>
-          </div>
+          </SlideUp>
 
           {/* Socky */}
-          <div className="col-span-3 mt-8 flex flex-col lg:mt-0">
+          <SlideUp
+            as={"div"}
+            className="lg:reveal-delay-400 col-span-3 mt-8 flex flex-col lg:mt-0"
+          >
             <Heading level={3} size="sm" font="display">
-              SLedujte nás
+              Sledujte nás
             </Heading>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
               <Button
@@ -99,21 +108,20 @@ export default function Contact() {
                 <FaSpotify />
               </Button>
             </div>
-          </div>
+          </SlideUp>
         </div>
 
         <div className="pt-16 md:pt-28 lg:grid lg:grid-cols-7 lg:gap-32">
-          <Heading
-            level={3}
-            size="lg"
-            font="display"
-            color="primary"
-            className="col-span-2"
-          >
-            Místo konání
-          </Heading>
+          <SlideUp as={"div"} className="col-span-2">
+            <Heading level={3} size="lg" font="display" color="primary">
+              Místo konání
+            </Heading>
+          </SlideUp>
           {/* Kontakt Kuba */}
-          <div className="col-span-5 mt-8 flex flex-col lg:mt-0">
+          <SlideUp
+            as={"div"}
+            className="lg:reveal-delay-200 col-span-5 mt-8 flex flex-col lg:mt-0"
+          >
             <Heading level={3} size="lg">
               Depo 2015, Plzeň
             </Heading>
@@ -156,7 +164,7 @@ export default function Contact() {
                 <FaGlobe />
               </Button>
             </div>
-          </div>
+          </SlideUp>
         </div>
       </Wrapper>
 

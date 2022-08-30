@@ -7,6 +7,33 @@ type Props = {
   className?: string;
 };
 
+const stagesTabs = [
+  {
+    id: 1,
+    headline: "Ateliér",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
+  },
+  {
+    id: 2,
+    headline: "Klempírna",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
+  },
+  {
+    id: 3,
+    headline: "Nádvoří",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
+  },
+  {
+    id: 4,
+    headline: "Kontejnery",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
+  },
+];
+
 export default function Program({ className = "" }: Props) {
   return (
     <Tab.Group
@@ -18,66 +45,21 @@ export default function Program({ className = "" }: Props) {
           "flex w-auto gap-5 overflow-x-auto px-1 py-4 sm:w-full sm:flex-1 sm:shrink-0 sm:flex-col sm:gap-10 sm:p-0"
         }
       >
-        <Tab
-          className={({ selected }) =>
-            selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-          }
-        >
-          <Heading level={3} size="lg" font="display" color="primary">
-            Ateliér
-          </Heading>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p>
-        </Tab>
-        <Tab
-          className={({ selected }) =>
-            selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-          }
-        >
-          <Heading level={3} size="lg" font="display" color="primary">
-            Klempírna
-          </Heading>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p>
-        </Tab>
-        <Tab
-          className={({ selected }) =>
-            selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-          }
-        >
-          <Heading level={3} size="lg" font="display" color="primary">
-            Nádvoří
-          </Heading>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p>
-        </Tab>
-        <Tab
-          className={({ selected }) =>
-            selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary sm:w-full"
-          }
-        >
-          <Heading level={3} size="lg" font="display" color="primary">
-            Kontejnery
-          </Heading>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p>
-        </Tab>
+        {stagesTabs.map((stage) => (
+          <Tab
+            key={stage.id}
+            className={({ selected }) =>
+              selected
+                ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full"
+                : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full"
+            }
+          >
+            <Heading level={3} size="lg" font="display" color="primary">
+              {stage.headline}
+            </Heading>
+            <p className="text-sm">{stage.caption}</p>
+          </Tab>
+        ))}
       </Tab.List>
       <Tab.Panels className={"py-10 sm:w-full sm:flex-1 sm:py-0 sm:px-5"}>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>

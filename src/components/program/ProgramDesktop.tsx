@@ -4,13 +4,22 @@ import { atelier, klempirna, kontejnery, nadvori } from "./programData";
 
 type Props = {
   className?: string;
+  hasBackground?: boolean;
 };
 
-export default function ProgramDesktop({ className = "" }: Props) {
+export default function ProgramDesktop({
+  className = "",
+  hasBackground = true,
+}: Props) {
   return (
     <div
-      className={`hidden lg:flex lg:flex-col lg:gap-6 xl:gap-10 ${className}`}
+      className={`relative hidden lg:flex lg:flex-col lg:gap-6 xl:gap-10 ${className}`}
     >
+      {/* Efekt v pozadí */}
+      {hasBackground && (
+        <div className="pointer-events-none absolute -top-14 -z-10 h-screen w-screen bg-gradient-to-tr from-body via-body to-secondary opacity-30 lg:h-[1200px]"></div>
+      )}
+
       {/* Nadpisy */}
       <div className="grid grid-cols-4 gap-10">
         <div className="flex flex-col gap-3 text-left">

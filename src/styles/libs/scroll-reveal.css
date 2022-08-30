@@ -1,5 +1,5 @@
 .lib-scroll-reveal {
-  --reveal-duration: 800ms;
+  --reveal-duration: 1000ms;
   --reveal-easing: ease;
   --reveal-offset: 4rem;
   --reveal-delay: 0ms;
@@ -77,6 +77,12 @@
   }
 }
 
+@layer utilities {
+  .reveal-duration-1400 {
+    --reveal-duration: 1400ms;
+  }
+}
+
 /**** Animations ****/
 
 /* Slide Up */
@@ -97,7 +103,7 @@
   opacity: 0;
   transform: translate3d(0, 4rem, 0);
   transform-origin: 50% 50%;
-  animation: slide-up 800ms ease var(--reveal-delay) forwards;
+  animation: slide-up 900ms ease var(--reveal-delay) forwards;
 }
 
 @keyframes slide-up {

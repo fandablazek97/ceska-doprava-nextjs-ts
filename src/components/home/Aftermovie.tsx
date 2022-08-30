@@ -20,22 +20,22 @@ export default function Aftermovie() {
     <section id="aftermovie">
       <button
         aria-label="Přehrát aftermovie"
-        className="group relative aspect-[16/9] w-full cursor-pointer bg-slate-700/50 focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
+        className="group relative aspect-[16/9] w-full cursor-pointer bg-gray-900 focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
         onClick={openModal}
       >
         <video
           autoPlay
           loop
           muted
-          className="h-full w-full object-cover opacity-50"
+          className="h-full w-full object-cover opacity-40"
         >
           <source src="/ffp-19-preview.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="z-1 absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2">
-          <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-transparent">
-            <BsFillPlayFill className="z-10 text-3xl text-body" />
-            <div className="absolute inset-0 -z-10 h-16 w-16 rounded-full bg-white transition-transform duration-300 ease-out-back group-hover:scale-125"></div>
+          <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-transparent">
+            <BsFillPlayFill className="z-10 text-3xl text-body-100" />
+            <div className="absolute inset-0 -z-10 h-20 w-20 rounded-full bg-white transition-transform duration-300 ease-out-back group-hover:scale-[1.25] lg:group-hover:scale-[1.35]"></div>
           </div>
         </div>
       </button>

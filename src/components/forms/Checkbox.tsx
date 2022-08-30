@@ -30,7 +30,7 @@ export default function Checkbox({
         name={name}
         className={`border-1 h-5 w-5 rounded
           border-white bg-white transition-shadow duration-150
-          checked:bg-success checked:hover:bg-success
+          checked:bg-black checked:hover:bg-black
           focus:border-body focus:!outline-none focus:ring-4 focus:ring-primary/70 focus:ring-offset-0
           checked:focus:bg-success
           ${

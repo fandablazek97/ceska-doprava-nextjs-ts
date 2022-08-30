@@ -3,11 +3,15 @@ import Heading from "@components/Heading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
+import { globalConfig } from "src/configs/globalConfig";
 
 const CookiesPage: NextPage = () => {
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo
+        title="Zásady používání cookies"
+        description="Lorem ipsum dolor sit amet"
+      />
       <Wrapper className="pt-24 md:pb-16 md:pt-36">
         <Heading
           level={1}
@@ -21,12 +25,12 @@ const CookiesPage: NextPage = () => {
       </Wrapper>
       <Wrapper size="sm" className="pb-40">
         <CookiesPolicy
-          domain="https://fotofestplzen.cz"
-          ownerName="Jakub Flaišman"
-          adress="Na Belánce 15"
-          ico="123456789"
+          domain={globalConfig.meta.url}
+          ownerName={globalConfig.client.fullName}
+          adress={globalConfig.client.adress}
+          ico={globalConfig.client.ico}
           validTime="šest měsíců"
-          lastUpdated="16. 12. 2021"
+          lastUpdated="1. 9. 2022"
         />
       </Wrapper>
     </>

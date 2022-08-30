@@ -9,7 +9,12 @@ import Link from "next/link";
 const NotFoundPage: NextPage = () => {
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo
+        title="Stránka nenalezena"
+        description="Stránka, kterou se pokoušíte nalézt již neexistuje, nebo byla přesunuta"
+        noFollow={true}
+        noIndex={true}
+      />
       <Wrapper
         className="flex flex-col items-start justify-start"
         paddedContent="lg"

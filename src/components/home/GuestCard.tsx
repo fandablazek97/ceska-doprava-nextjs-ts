@@ -1,4 +1,5 @@
 import Heading from "@components/Heading";
+import SlideUp from "@components/scroll-reveal/SlideUp";
 import Image from "next/future/image";
 
 type Props = {
@@ -6,6 +7,7 @@ type Props = {
   alt?: string;
   name?: string;
   caption?: string;
+  className?: string;
 };
 
 export default function GuestCard({
@@ -13,9 +15,13 @@ export default function GuestCard({
   alt = "lorem ipsum",
   name = "Jméno a příjmení",
   caption = "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  className = "",
 }: Props) {
   return (
-    <div className="col-span-1 flex flex-col gap-4">
+    <SlideUp
+      as={"div"}
+      className={`col-span-1 flex flex-col gap-4 ${className}`}
+    >
       <Image
         src={src}
         alt={alt}
@@ -28,6 +34,6 @@ export default function GuestCard({
         {name}
       </Heading>
       <p className="text-sm">{caption}.</p>
-    </div>
+    </SlideUp>
   );
 }

@@ -18,7 +18,10 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo
+        title="Největší fotografická akce na západě Čech"
+        description="Lorem ipsum dolor sit amet"
+      />
       <Hero />
       <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
         <Aftermovie />

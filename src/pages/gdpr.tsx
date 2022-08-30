@@ -3,11 +3,15 @@ import Heading from "@components/Heading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
+import { globalConfig } from "src/configs/globalConfig";
 
 const GdprPage: NextPage = () => {
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo
+        title="Zpracování osobních údajů"
+        description="Lorem ipsum dolor sit amet"
+      />
       <Wrapper className="pt-24 md:pb-16 md:pt-36">
         <Heading
           level={1}
@@ -21,11 +25,11 @@ const GdprPage: NextPage = () => {
       </Wrapper>
       <Wrapper size="sm" className="pt-24 pb-40">
         <GdprPolicy
-          ownerName="Jakub Flaišman"
-          adress="Na Belánce 14"
-          email="info@fotofestplzen.cz"
-          phone="+420 123 456 789"
-          ico="123456789"
+          ownerName={globalConfig.client.fullName}
+          adress={globalConfig.client.adress}
+          email={globalConfig.client.email}
+          phone={globalConfig.client.phone}
+          ico={globalConfig.client.ico}
           takesEffectDate="1. 9. 2022"
         />
       </Wrapper>
