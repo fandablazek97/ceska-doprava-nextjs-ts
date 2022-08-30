@@ -15,6 +15,7 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "@emailjs/browser": "^3.6.2",
     "@fontsource/bebas-neue": "^4.5.8",
     "@fontsource/inter": "^4.5.11",
