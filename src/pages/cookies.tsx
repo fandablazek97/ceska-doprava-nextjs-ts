@@ -26,7 +26,7 @@ const CookiesPage: NextPage = () => {
       <Wrapper size="sm" className="pb-40">
         <CookiesPolicy
           domain={globalConfig.meta.url}
-          ownerName={globalConfig.client.fullName}
+          ownerName={globalConfig.client.companyName}
           adress={globalConfig.client.adress}
           ico={globalConfig.client.ico}
           validTime="šest měsíců"

@@ -4,7 +4,7 @@
   }
 
   body {
-    @apply bg-body font-sans font-normal leading-[1.8] text-muted transition-[background-color] duration-150;
+    @apply overflow-x-hidden bg-body font-sans font-normal leading-[1.8] text-muted transition-[background-color] duration-150;
   }
 
   ::selection {

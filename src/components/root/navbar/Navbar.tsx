@@ -1,11 +1,11 @@
 import BrandLogo from "@components/BrandLogo";
 import Wrapper from "@components/Wrapper";
+import useScrollListener from "@hooks/useScrollListener";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import NavbarAdditionalLinks from "./NavbarAdditionalLinks";
 import NavbarMainLinks from "./NavbarMainLinks";
-import useScrollListener from "./useScrollListener";
 
 export default function Navbar() {
   // // State

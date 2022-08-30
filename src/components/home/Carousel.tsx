@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { Mousewheel, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,8 +17,6 @@ export default function Carousel({ className = "" }: Props) {
         slidesPerView={"auto"}
         centeredSlides={true}
         grabCursor={true}
-        // cssMode={true}
-        // mousewheel={true}
         freeMode={true}
         spaceBetween={20}
         breakpoints={{
@@ -33,71 +32,67 @@ export default function Carousel({ className = "" }: Props) {
         pagination={{
           clickable: true,
         }}
-        className={` ${className}`}
+        className={`${className}`}
       >
-        <SwiperSlide className="mb-24 w-3/4 md:ml-auto md:w-2/3">
+        <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
-            <div className="aspect-[3/4] md:aspect-video">
-              <Image
-                src={"/images/conf.jpg"}
-                alt={"Konference"}
-                width={1920}
-                height={1080}
-                className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
-                loading="lazy"
-              />
-            </div>
+            <ExportedImage
+              src={"/images/conf.jpg"}
+              alt={"Konference"}
+              width={1920}
+              height={1080}
+              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              objectFit="cover"
+              loading="lazy"
+            />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="mb-24 w-3/4 md:w-2/3">
+        <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
-            <div className="aspect-[3/4] md:aspect-video">
-              <Image
-                src={"/images/conf.jpg"}
-                alt={"Konference"}
-                width={1920}
-                height={1080}
-                className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
-                loading="lazy"
-              />
-            </div>
+            <ExportedImage
+              src={"/images/conf.jpg"}
+              alt={"Konference"}
+              width={1920}
+              height={1080}
+              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              objectFit="cover"
+              loading="lazy"
+            />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="mb-24 w-3/4 md:w-2/3">
+        <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
-            <div className="aspect-[3/4] md:aspect-video">
-              <Image
-                src={"/images/conf.jpg"}
-                alt={"Konference"}
-                width={1920}
-                height={1080}
-                className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
-                loading="lazy"
-              />
-            </div>
+            <ExportedImage
+              src={"/images/conf.jpg"}
+              alt={"Konference"}
+              width={1920}
+              height={1080}
+              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              objectFit="cover"
+              loading="lazy"
+            />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="mb-24 w-3/4 md:w-2/3">
+        <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
-            <div className="aspect-[3/4] md:aspect-video">
-              <Image
-                src={"/images/conf.jpg"}
-                alt={"Konference"}
-                width={1920}
-                height={1080}
-                className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
-                loading="lazy"
-              />
-            </div>
+            <ExportedImage
+              src={"/images/conf.jpg"}
+              alt={"Konference"}
+              width={1920}
+              height={1080}
+              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              objectFit="cover"
+              loading="lazy"
+            />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </span>

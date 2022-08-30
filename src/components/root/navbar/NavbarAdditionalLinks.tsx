@@ -1,5 +1,6 @@
 import Button from "@components/Button";
 import SocialLinks from "@components/SocialLinks";
+import { ctaMenu } from "@configs/routes";
 import { HiCalendar } from "react-icons/hi";
 
 type NavbarAdditionalLinksOptions = {
@@ -16,8 +17,9 @@ export default function NavbarAdditionalLinks({
       <SocialLinks className="hidden lg:block" />
       <Button
         as="a"
-        href="https://facebook.com/"
-        target="_blank"
+        href={ctaMenu[0].link}
+        target="blank"
+        rel="noopener noreferrer"
         size="sm"
         leftIcon={<HiCalendar />}
         className="hidden sm:inline-flex"

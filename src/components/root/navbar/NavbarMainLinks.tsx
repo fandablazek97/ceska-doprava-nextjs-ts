@@ -1,5 +1,5 @@
+import { mainRoutes } from "@configs/routes";
 import Link from "next/link";
-import { mainRoutes } from "./routes";
 
 type NavbarMainLinksOptions = {
   className?: string;

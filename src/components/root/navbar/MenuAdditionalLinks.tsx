@@ -1,4 +1,4 @@
-import { ctaMenu } from "./routes";
+import { ctaMenu } from "../../../configs/routes";
 
 type MenuAdditionalLinksOptions = {
   className?: string;

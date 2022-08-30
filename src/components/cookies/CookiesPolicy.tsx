@@ -75,16 +75,6 @@ export default function CookiesPolicy({
         stránkách pohybují.
       </p>
 
-      <h3>Marketingové cookies</h3>
-      <p>
-        Jsou nastaveny službami sociálních médií (např. Facebook), které jsme
-        přidali na web, abychom vám umožnili sdílet náš obsah se svými přáteli a
-        sítěmi. Tyto soubory cookies jsou schopny sledovat váš prohlížeč na
-        jiných webových stránkách a sestavovat profil vašich zájmů. To může
-        ovlivnit obsah a zprávy, které vidíte na jiných webových stránkách,
-        které navštěvujete.
-      </p>
-
       <h2>Doba uchování souborů cookies</h2>
       <p>
         Doba, po kterou soubory cookies zůstanou ve vašem zařízení, se odvíjí od

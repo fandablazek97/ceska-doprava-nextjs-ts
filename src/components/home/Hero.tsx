@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Content */}
       <div className="z-10 pt-52 pb-32">
         <div className="anim-slide-up reveal-delay-500 flex items-start justify-start">
-          <h1 className="mr-2 font-display text-4xl font-semibold uppercase leading-[1.2] text-white xs:text-5xl sm:text-7xl lg:text-9xl 2xl:text-[11rem]">
+          <h1 className="mr-2 font-display text-4xl font-semibold uppercase leading-[1.2] text-white xs:text-5xl sm:text-7xl lg:text-9xl 2xl:text-[11.5rem]">
             Foto fest Plzeň
           </h1>
           <span className="font-display text-base font-normal text-primary xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">

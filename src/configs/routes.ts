@@ -20,11 +20,11 @@ export const mainRoutes = [
 export const ctaMenu = [
   {
     label: "Facebook událost",
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/events/480096767098250",
   },
   {
-    label: "+420 123 456 789",
-    link: "tel:+420123456789",
+    label: "+420 775 554 479",
+    link: "tel:+420775554479",
   },
   {
     label: "Info@fotofestplzen.cz",

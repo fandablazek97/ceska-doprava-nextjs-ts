@@ -1,5 +1,5 @@
 .lib-scroll-reveal {
-  --reveal-duration: 1000ms;
+  --reveal-duration: 900ms;
   --reveal-easing: ease;
   --reveal-offset: 4rem;
   --reveal-delay: 0ms;
@@ -74,12 +74,6 @@
 
   .reveal-delay-1500 {
     --reveal-delay: 1500ms;
-  }
-}
-
-@layer utilities {
-  .reveal-duration-1400 {
-    --reveal-duration: 1400ms;
   }
 }
 

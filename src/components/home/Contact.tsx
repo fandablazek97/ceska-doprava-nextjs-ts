@@ -2,9 +2,9 @@ import Button from "@components/Button";
 import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Wrapper from "@components/Wrapper";
+import { socials } from "@configs/socials";
 import copy from "copy-to-clipboard";
 import { toast } from "react-toastify";
-import { socials } from "src/configs/socials";
 
 // Icons
 import SlideUp from "@components/scroll-reveal/SlideUp";
@@ -16,6 +16,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { HiDocumentDuplicate, HiPaperAirplane } from "react-icons/hi";
+import { ctaMenu } from "src/configs/routes";
 
 export default function Contact() {
   const notify = () => toast("Adresa byla zkopírována do schránky");
@@ -28,6 +29,7 @@ export default function Contact() {
               Kontakt
             </MainHeading>
           </SlideUp>
+
           {/* Kontakt Kuba */}
           <SlideUp
             as={"div"}
@@ -41,16 +43,16 @@ export default function Contact() {
             </span>
             <div className="mt-6 flex flex-col gap-2">
               <a
-                href="tel:+420775554479"
+                href={ctaMenu[1].link}
                 className="c-link-3-a text-lg font-medium text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
-                +420 775 554 479
+                {ctaMenu[1].label}
               </a>
               <a
-                href="mailto:info@fotofestplzen.cz"
+                href={ctaMenu[2].link}
                 className="c-link-3-a text-lg font-medium text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
-                Info@fotofestplzen.cz
+                {ctaMenu[2].label}
               </a>
             </div>
           </SlideUp>
@@ -122,7 +124,8 @@ export default function Contact() {
               Místo konání
             </Heading>
           </SlideUp>
-          {/* Kontakt Kuba */}
+
+          {/* Depo */}
           <SlideUp
             as={"div"}
             className="lg:reveal-delay-200 col-span-5 mt-8 flex flex-col lg:mt-0"

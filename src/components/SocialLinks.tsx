@@ -1,5 +1,5 @@
+import { socials } from "@configs/socials";
 import { FaFacebookF, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
-import { socials } from "src/configs/socials";
 
 type SocialLinksOptions = {
   as?: React.ElementType;

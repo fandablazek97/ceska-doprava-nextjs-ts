@@ -16,23 +16,23 @@ type Props = {
 const workshops = [
   {
     id: 1,
-    value: "Jan Žižka",
+    value: "Workshop 1",
   },
   {
     id: 2,
-    value: "Jan Hus",
+    value: "Workshop 2",
   },
   {
     id: 3,
-    value: "Jan Roháč z dubé",
+    value: "Workshop 3",
   },
   {
     id: 4,
-    value: "Karel IV",
+    value: "Workshop 4",
   },
   {
     id: 5,
-    value: "Jan Lucemburský",
+    value: "Workshop 5",
   },
 ];
 

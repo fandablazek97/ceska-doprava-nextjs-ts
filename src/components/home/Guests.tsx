@@ -70,45 +70,45 @@ export default function Guests({ className = "" }: Props) {
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
         <Tab.Panel
           className={
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
         <Tab.Panel
           className={
             "grid grid-cols-1 gap-x-6 gap-y-10 xs:grid-cols-2 md:gap-x-12 md:gap-y-20 xl:grid-cols-3"
           }
         >
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100 xl:reveal-delay-200" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-100" />
-          <GuestCard className="reveal-duration-1400 xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-100 xl:reveal-delay-200" />
+          <GuestCard className="xs:reveal-delay-0" />
+          <GuestCard className="xs:reveal-delay-100" />
+          <GuestCard className="xs:reveal-delay-0 xl:reveal-delay-200" />
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>

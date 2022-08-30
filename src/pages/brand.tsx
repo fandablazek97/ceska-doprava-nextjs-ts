@@ -20,7 +20,7 @@ const BrandPage: NextPage = () => {
       <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
       <Wrapper paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
-          Identita značky
+          Grafické podklady
         </MainHeading>
         <div className="grid w-full grid-cols-1 gap-10 py-10 md:grid-cols-2 md:gap-16">
           <p className="text-lg font-medium">
@@ -258,7 +258,7 @@ const BrandPage: NextPage = () => {
       <Wrapper paddedContent="sm" className="mb-20">
         <div className="flex w-full flex-col items-center justify-center gap-8 bg-secondary py-20 md:py-32">
           <Heading level={2} size="xl" font="display" align="center">
-            Grafické podklady ke stažení
+            Komplet + manuál ke stažení
           </Heading>
           <p className="max-w-2xl text-center text-lg text-gray-100">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum

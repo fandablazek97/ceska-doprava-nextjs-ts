@@ -3,7 +3,7 @@ import Heading from "@components/Heading";
 import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
-import { mainRoutes } from "../navbar/routes";
+import { ctaMenu, mainRoutes } from "../../../configs/routes";
 import FooterAuthor from "./FooterAuthor";
 
 export default function Footer() {
@@ -63,7 +63,7 @@ export default function Footer() {
             <li>
               <Link href="/brand">
                 <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Firemní identita značky
+                  Grafické podklady
                 </a>
               </Link>
             </li>
@@ -81,18 +81,18 @@ export default function Footer() {
           <ul className="mt-2 space-y-1">
             <li>
               <a
-                href="tel:tel:+420775554479"
+                href={ctaMenu[1].link}
                 className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
-                +420 775 554 479
+                {ctaMenu[1].label}
               </a>
             </li>
             <li>
               <a
-                href="mailto:info@fotofestplzen.cz"
+                href={ctaMenu[2].link}
                 className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
               >
-                Info@fotofestplzen.cz
+                {ctaMenu[2].label}
               </a>
             </li>
           </ul>
