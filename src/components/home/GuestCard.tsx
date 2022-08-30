@@ -1,6 +1,6 @@
 import Heading from "@components/Heading";
 import SlideUp from "@components/scroll-reveal/SlideUp";
-import Image from "next/future/image";
+import Image from "next/image";
 
 type Props = {
   src?: string;

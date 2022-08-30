@@ -9,10 +9,10 @@ export const socials = {
   },
   youtube: {
     link: "https://www.linkedin.com/",
-    ariaLabel: "odkaz na linkedin",
+    ariaLabel: "odkaz na youtube",
   },
   spotify: {
     link: "https://twitter.com/",
-    ariaLabel: "odkaz na twitter",
+    ariaLabel: "odkaz na spotify",
   },
 };

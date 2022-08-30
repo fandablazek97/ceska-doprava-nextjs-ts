@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import { Mousewheel, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 

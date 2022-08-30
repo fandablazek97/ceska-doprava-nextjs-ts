@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
+import { socials } from "src/configs/socials";
 
 type SocialLinksOptions = {
   as?: React.ElementType;
@@ -17,8 +18,8 @@ export default function SocialLinks({
       <ul className="flex gap-x-10">
         <li>
           <a
-            href="https://facebook.com"
-            aria-label="Facebook"
+            href={socials.facebook.link}
+            aria-label={socials.facebook.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -28,8 +29,8 @@ export default function SocialLinks({
         </li>
         <li>
           <a
-            href="https://facebook.com"
-            aria-label="Instagram"
+            href={socials.instagram.link}
+            aria-label={socials.instagram.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -39,8 +40,8 @@ export default function SocialLinks({
         </li>
         <li>
           <a
-            href="https://facebook.com"
-            aria-label="Youtube"
+            href={socials.youtube.link}
+            aria-label={socials.youtube.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
@@ -50,8 +51,8 @@ export default function SocialLinks({
         </li>
         <li>
           <a
-            href="https://facebook.com"
-            aria-label="Spotify"
+            href={socials.spotify.link}
+            aria-label={socials.spotify.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
             className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"

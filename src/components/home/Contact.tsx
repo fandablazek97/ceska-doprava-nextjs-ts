@@ -4,6 +4,7 @@ import MainHeading from "@components/MainHeading";
 import Wrapper from "@components/Wrapper";
 import copy from "copy-to-clipboard";
 import { toast } from "react-toastify";
+import { socials } from "src/configs/socials";
 
 // Icons
 import SlideUp from "@components/scroll-reveal/SlideUp";
@@ -65,9 +66,10 @@ export default function Contact() {
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
               <Button
                 as="a"
-                href="https://facebook.com"
+                href={socials.facebook.link}
+                aria-label={socials.facebook.ariaLabel}
                 target="blank"
-                aria-label="Facebook"
+                rel="noopener noreferrer"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -76,9 +78,10 @@ export default function Contact() {
               </Button>
               <Button
                 as="a"
-                href="https://facebook.com"
+                href={socials.instagram.link}
+                aria-label={socials.instagram.ariaLabel}
                 target="blank"
-                aria-label="Instagram"
+                rel="noopener noreferrer"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -87,9 +90,10 @@ export default function Contact() {
               </Button>
               <Button
                 as="a"
-                href="https://facebook.com"
+                href={socials.youtube.link}
+                aria-label={socials.youtube.ariaLabel}
                 target="blank"
-                aria-label="Youtube"
+                rel="noopener noreferrer"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
@@ -98,9 +102,10 @@ export default function Contact() {
               </Button>
               <Button
                 as="a"
-                href="https://facebook.com"
+                href={socials.spotify.link}
+                aria-label={socials.spotify.ariaLabel}
                 target="blank"
-                aria-label="Spotify"
+                rel="noopener noreferrer"
                 type="outlined"
                 isIconBox={true}
                 shape="pill"
