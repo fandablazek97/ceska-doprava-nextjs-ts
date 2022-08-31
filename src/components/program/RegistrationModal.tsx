@@ -64,8 +64,8 @@ export default function RegistrationModal() {
                     Registrace na workshopy
                   </Dialog.Title>
                   <p className="mb-10">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus, ducimus.
+                    Platnost registrace ti po odeslání formuláře potvrdíme
+                    e-mailem.
                   </p>
                   <RegistrationForm />
 

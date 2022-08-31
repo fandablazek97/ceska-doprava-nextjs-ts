@@ -15,6 +15,12 @@ import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 
+// To Do
+// Sitemapa generátor
+// Komponent "program již brzy"
+// Seo
+// Finální content
+
 const Home: NextPage = () => {
   return (
     <>
@@ -36,11 +42,10 @@ const Home: NextPage = () => {
         <SlideUp
           as={"p"}
           delay="200"
-          className="mt-8 max-w-xl text-lg font-medium"
+          className="mt-8 max-w-prose text-lg font-medium"
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          voluptates optio provident reprehenderit molestias voluptatibus itaque
-          eos, a inventore quos!
+          Zajímá tě, s kým se letos na festivalu potkáš? Stay tuned! Brzy
+          odhalíme lektory a speakery, kteří za vámi dorazí.
         </SlideUp>
         <Guests className="mt-20 md:mt-36" />
       </Wrapper>
@@ -55,11 +60,10 @@ const Home: NextPage = () => {
           <SlideUp
             as={"p"}
             delay="200"
-            className="mt-8 max-w-3xl text-center text-lg font-medium"
+            className="mt-8 max-w-prose text-center text-lg font-medium"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-            voluptates optio provident reprehenderit molestias voluptatibus
-            itaque eos, a inventore quos!
+            Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
+            poradit se s výběrem nového kousku.
           </SlideUp>
           <Exhibitors />
         </div>
@@ -74,11 +78,14 @@ const Home: NextPage = () => {
         <SlideUp
           as={"p"}
           delay="200"
-          className="mt-8 max-w-xl text-lg font-medium"
+          className="mt-8 max-w-prose text-lg font-medium"
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          voluptates optio provident reprehenderit molestias voluptatibus itaque
-          eos, a inventore quos!
+          I letos se držíme osvědčené taktiky, program bude složený z přednášek
+          a workshopů na čtyřech stagích. Přednášky, stejně jako minule, budou
+          volně přístupné pro všechny návštěvníky. Na workshopy se letos budeš
+          muset registrovat nebo si na něj zakoupit vstupenku, záleží na jaký
+          půjdeš. Pokud chceš mít místo na workshopy jasný, sleduj naše sítě,
+          odebírej newsletter nebo se přidej k události.
         </SlideUp>
         <Program className="mt-20" />
         <ProgramDesktop className="mt-36" />
@@ -103,9 +110,7 @@ const Home: NextPage = () => {
           delay="200"
           className="mt-8 max-w-xl text-lg font-medium"
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          voluptates optio provident reprehenderit molestias voluptatibus itaque
-          eos, a inventore quos!
+          Odpovědi na to, na co se nás často ptáte.
         </SlideUp>
         <Faq />
       </Wrapper>

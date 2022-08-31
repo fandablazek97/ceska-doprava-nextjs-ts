@@ -16,14 +16,17 @@ export default function Hero() {
             2022
           </span>
         </div>
-        <p className="anim-slide-up reveal-delay-800 mt-2 max-w-3xl text-base font-medium md:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+        <p className="anim-slide-up reveal-delay-800 mt-2 max-w-3xl text-lg font-medium md:text-xl">
+          Největší fotografický festival na západě Čech.{" "}
+          <span className="ml-2 uppercase text-primary">#fotofestplzen</span>
         </p>
+        {/* <span className="mt-2 block text-xl font-semibold uppercase sm:text-2xl md:text-3xl">
+          #fotofestplzen
+        </span> */}
         <div className="mt-8 flex flex-col gap-5 md:mt-16 md:flex-row md:gap-14">
           <div className="anim-slide-up reveal-delay-800 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
-              Datum
+              Kdy
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
               1.10. 2022
@@ -31,7 +34,7 @@ export default function Hero() {
           </div>
           <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
-              Místo konání
+              Kde
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
               Depo 2015, Plzeň

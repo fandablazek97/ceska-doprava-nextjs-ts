@@ -23,7 +23,7 @@ export default function CookieConsentBar() {
   }, [isScrolled, setIsScrolled]);
   return (
     <CookieConsent
-      // debug={true}
+      debug={true}
       cookieName="ffp-2022"
       location="bottom"
       disableStyles={true}
@@ -41,9 +41,9 @@ export default function CookieConsentBar() {
       } fixed w-full sm:w-auto flex flex-col lg:flex-row items-start lg:items-center gap-5 bottom-0 sm:-translate-y-5 right-0 sm:right-5 z-[90] bg-body-100 max-w-3xl backdrop-blur-md p-6 transition-[transform,opacity,visibility] duration-300`}
       buttonWrapperClasses="flex gap-3"
     >
-      <div className="sm:flex sm:items-center sm:justify-start sm:gap-4">
-        <FaCookieBite className="mb-2 text-lg sm:mb-0 lg:text-2xl" />
-        <span className="block">
+      <div className="flex items-center justify-start gap-4">
+        <FaCookieBite className="mb-0 text-base sm:text-lg lg:text-2xl" />
+        <span className="block text-xs md:text-sm">
           Tato webová stránka používá cookies.{" "}
           <Link href="/cookies">
             <a className="c-link-3-a">Zjistit více.</a>

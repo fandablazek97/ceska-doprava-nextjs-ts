@@ -68,7 +68,7 @@ const ProgramPage: NextPage = () => {
       <Wrapper size="lg" className="pb-28 md:pb-52">
         <div className="aspect-video w-full bg-body-100">
           <img
-            src="/images/conf.jpg"
+            src="/images/map.jpg"
             alt="Mapa areálu festivalu"
             className="h-full w-full object-cover"
             loading="lazy"

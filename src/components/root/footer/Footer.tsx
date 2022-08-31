@@ -75,9 +75,6 @@ export default function Footer() {
           <Heading level={3} size="sm">
             Jakub Flaišman
           </Heading>
-          <span className="block text-sm font-medium tracking-widest text-gray-400">
-            Jednatel
-          </span>
           <ul className="mt-2 space-y-1">
             <li>
               <a

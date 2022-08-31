@@ -30,7 +30,7 @@ export default function Aftermovie() {
           className="h-full w-full object-cover opacity-40"
         >
           <source src="/ffp-19-preview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Váš prohlížeč nepodporuje video
         </video>
         <div className="z-1 absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2">
           <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-transparent">
@@ -40,7 +40,7 @@ export default function Aftermovie() {
         </div>
       </button>
       <span className="pt-8 text-xs font-medium uppercase tracking-wider">
-        Přehrát Aftermovie
+        Foto Fest Plzeň 2019 aftermovie
       </span>
 
       {/* Samotný modal */}

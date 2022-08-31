@@ -38,9 +38,6 @@ export default function Contact() {
             <Heading level={3} size="sm" font="display">
               Jakub Flaišman
             </Heading>
-            <span className="mt-1 block font-medium tracking-widest text-gray-400">
-              Jednatel
-            </span>
             <div className="mt-6 flex flex-col gap-2">
               <a
                 href={ctaMenu[1].link}

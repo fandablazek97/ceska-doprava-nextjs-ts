@@ -74,8 +74,9 @@ export default function Newsletter() {
           Odebírej novinky, ať ti nic neuteče!
         </Heading>
         <p className="mt-6 text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quas
-          quisquam voluptate et sequi vitae neque corrupti.
+          Chceš mít nejnovější info z festivalu i mimo něj? Přihlas se k odběru
+          a dáme ti vědět o programu, hostech a akcích, které připravujeme i
+          během roku.
         </p>
       </div>
       <form
