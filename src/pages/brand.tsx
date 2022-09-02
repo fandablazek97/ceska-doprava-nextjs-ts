@@ -17,23 +17,11 @@ const BrandPage: NextPage = () => {
 
   return (
     <>
-      <Seo title="Foto fest Plzeň" description="Lorem ipsum dolor sit amet" />
+      <Seo title="Grafické podklady" description="" />
       <Wrapper paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Grafické podklady
         </MainHeading>
-        <div className="grid w-full grid-cols-1 gap-10 py-10 md:grid-cols-2 md:gap-16">
-          <p className="text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-            voluptates optio provident reprehenderit molestias voluptatibus
-            itaque eos, a inventore quos!
-          </p>
-          <p className="text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-            voluptates optio provident reprehenderit molestias voluptatibus
-            itaque eos, a inventore quos!
-          </p>
-        </div>
       </Wrapper>
 
       {/* Barvy */}
@@ -41,11 +29,6 @@ const BrandPage: NextPage = () => {
         <Heading level={2} size="xl" font="display">
           Barvy
         </Heading>
-        <p className="mt-10 max-w-2xl text-lg font-medium">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          voluptates optio provident reprehenderit molestias voluptatibus itaque
-          eos, a inventore quos!
-        </p>
         <div className="grid grid-cols-1 gap-10 py-16 xs:grid-cols-2 md:grid-cols-3">
           <div className="col-span-1 flex aspect-square w-full items-end justify-start bg-secondary p-3 md:p-6">
             <span
@@ -88,11 +71,6 @@ const BrandPage: NextPage = () => {
         <Heading level={2} size="xl" font="display">
           Loga ke stažení
         </Heading>
-        <p className="mt-10 max-w-2xl text-lg font-medium">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          voluptates optio provident reprehenderit molestias voluptatibus itaque
-          eos, a inventore quos!
-        </p>
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 py-16 md:grid-cols-2">
           {/* Hlavní loga */}
           <div className="flex flex-col gap-5">
@@ -108,12 +86,8 @@ const BrandPage: NextPage = () => {
               </div>
             </div>
             <Heading level={3} size="base">
-              Varianta loga
+              Primární logo - pro světlé pozadí
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              pariatur.
-            </p>
             <div className="flex justify-start gap-5">
               <Button
                 as="a"
@@ -147,12 +121,8 @@ const BrandPage: NextPage = () => {
               </div>
             </div>
             <Heading level={3} size="base">
-              Varianta loga
+              Primární logo - pro tmavé pozadí
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              pariatur.
-            </p>
             <div className="flex justify-start gap-5">
               <Button
                 as="a"
@@ -187,12 +157,8 @@ const BrandPage: NextPage = () => {
               </div>
             </div>
             <Heading level={3} size="base">
-              Varianta loga
+              Sekundární logo - pro světlé pozadí
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              pariatur.
-            </p>
             <div className="flex justify-start gap-5">
               <Button
                 as="a"
@@ -226,12 +192,8 @@ const BrandPage: NextPage = () => {
               </div>
             </div>
             <Heading level={3} size="base">
-              Varianta loga
+              Sekundární logo - pro tmavé pozadí
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              pariatur.
-            </p>
             <div className="flex justify-start gap-5">
               <Button
                 as="a"
@@ -256,14 +218,13 @@ const BrandPage: NextPage = () => {
 
       {/* Vše ke stažení */}
       <Wrapper paddedContent="sm" className="mb-20">
-        <div className="flex w-full flex-col items-center justify-center gap-8 bg-secondary py-20 md:py-32">
+        <div className="flex w-full flex-col items-center justify-center gap-8 bg-secondary px-5 py-20 md:py-32">
           <Heading level={2} size="xl" font="display" align="center">
             Komplet + manuál ke stažení
           </Heading>
           <p className="max-w-2xl text-center text-lg text-gray-100">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-            voluptates optio provident reprehenderit molestias voluptatibus
-            itaque eos, a inventore quos!
+            Soubor obsahuje používané fonty, loga ve všech variantách (rastr i
+            vektor) a stručný manuál jak vše používat.
           </p>
           <Button
             as="a"
@@ -272,7 +233,7 @@ const BrandPage: NextPage = () => {
             leftIcon={<HiDownload />}
             size="lg"
           >
-            Stáhnout UI Kit
+            Stáhnout balíček
           </Button>
         </div>
       </Wrapper>

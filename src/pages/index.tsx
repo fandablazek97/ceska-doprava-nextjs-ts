@@ -3,13 +3,14 @@ import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
 import Exhibitors from "@components/home/Exhibitors";
 import Faq from "@components/home/Faq";
-import Guests from "@components/home/Guests";
+// import Guests from "@components/home/Guests";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
+import PendingContent from "@components/home/PendingContent";
 import MainHeading from "@components/MainHeading";
-import Program from "@components/program/Program";
-import ProgramDesktop from "@components/program/ProgramDesktop";
+// import Program from "@components/program/Program";
+// import ProgramDesktop from "@components/program/ProgramDesktop";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
@@ -25,8 +26,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Seo
-        title="Největší fotografická akce na západě Čech"
-        description="Lorem ipsum dolor sit amet"
+        title="Největší fotografický festival na západě Čech"
+        description=""
       />
       <Hero />
       <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
@@ -47,7 +48,8 @@ const Home: NextPage = () => {
           Zajímá tě, s kým se letos na festivalu potkáš? Stay tuned! Brzy
           odhalíme lektory a speakery, kteří za vámi dorazí.
         </SlideUp>
-        <Guests className="mt-20 md:mt-36" />
+        <PendingContent className="mt-20 md:mt-36" />
+        {/* <Guests className="mt-20 md:mt-36" /> */}
       </Wrapper>
 
       <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
@@ -87,8 +89,9 @@ const Home: NextPage = () => {
           půjdeš. Pokud chceš mít místo na workshopy jasný, sleduj naše sítě,
           odebírej newsletter nebo se přidej k události.
         </SlideUp>
-        <Program className="mt-20" />
-        <ProgramDesktop className="mt-36" />
+        <PendingContent className="mt-20 md:mt-36" />
+        {/* <Program className="mt-20" />
+        <ProgramDesktop className="mt-36" /> */}
       </Wrapper>
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
@@ -99,20 +102,29 @@ const Home: NextPage = () => {
 
       <Contact />
 
-      <Wrapper as={"section"} id="faq" paddedContent="base">
-        <SlideUp>
-          <MainHeading level={2} number="05" size="2xl">
-            Faq
-          </MainHeading>
-        </SlideUp>
-        <SlideUp
-          as={"p"}
-          delay="200"
-          className="mt-8 max-w-xl text-lg font-medium"
-        >
-          Odpovědi na to, na co se nás často ptáte.
-        </SlideUp>
-        <Faq />
+      <Wrapper
+        as={"section"}
+        id="faq"
+        paddedContent="base"
+        className="grid grid-cols-1 gap-20 sm:mt-20 lg:grid-cols-3"
+      >
+        <div className="col-span-1">
+          <SlideUp>
+            <MainHeading level={2} number="05" size="2xl">
+              Faq
+            </MainHeading>
+          </SlideUp>
+          <SlideUp
+            as={"p"}
+            delay="200"
+            className="mt-8 max-w-xl text-lg font-medium"
+          >
+            Odpovědi na to, na co se nás často ptáte.
+          </SlideUp>
+        </div>
+        <div className="col-span-2">
+          <Faq />
+        </div>
       </Wrapper>
 
       <section className="py-24 xl:py-32">
@@ -130,15 +142,6 @@ const Home: NextPage = () => {
             <MainHeading level={2} size="2xl" number="06">
               Partneři
             </MainHeading>
-          </SlideUp>
-          <SlideUp
-            as={"p"}
-            delay="200"
-            className="mt-8 max-w-3xl text-center text-lg font-medium"
-          >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-            voluptates optio provident reprehenderit molestias voluptatibus
-            itaque eos, a inventore quos!
           </SlideUp>
           <Partners />
         </div>

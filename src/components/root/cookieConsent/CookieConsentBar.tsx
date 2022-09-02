@@ -31,8 +31,8 @@ export default function CookieConsentBar() {
       enableDeclineButton
       buttonText="Souhlasím"
       declineButtonText="Zakázat"
-      buttonClasses="font-semibold py-2 px-3 text-xs text-white bg-primary hover:bg-opacity-60 transition-colors duration-200"
-      declineButtonClasses="font-semibold py-2 px-3 text-gray-900 text-xs bg-white hover:bg-opacity-60 transition-colors duration-200"
+      buttonClasses="font-semibold py-2 px-3 text-xs text-white bg-primary hover:bg-opacity-70 transition-colors duration-200 outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
+      declineButtonClasses="font-semibold py-2 px-3 text-gray-900 text-xs bg-white hover:bg-opacity-70 transition-colors duration-200 outline-none focus-visible:ring-4 focus-visible:ring-white/70"
       expires={183}
       containerClasses={`${
         isScrolled
@@ -46,7 +46,9 @@ export default function CookieConsentBar() {
         <span className="block text-xs md:text-sm">
           Tato webová stránka používá cookies.{" "}
           <Link href="/cookies">
-            <a className="c-link-3-a">Zjistit více.</a>
+            <a className="c-link-3-a outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+              Zjistit více.
+            </a>
           </Link>
         </span>
       </div>

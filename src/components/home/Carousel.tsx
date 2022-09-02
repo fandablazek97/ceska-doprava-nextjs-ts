@@ -37,64 +37,48 @@ export default function Carousel({ className = "" }: Props) {
         <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
             <ExportedImage
-              src={"/images/conf.jpg"}
-              alt={"Konference"}
+              src={"/images/vystavovatele.jpg"}
+              alt={"Vystavovatelé"}
               width={1920}
               height={1080}
-              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              className="aspect-video h-full bg-gray-700 object-cover"
               objectFit="cover"
               loading="lazy"
             />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Hlavní sál s vystavovateli
             </span>
           </div>
         </SwiperSlide>
         <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
             <ExportedImage
-              src={"/images/conf.jpg"}
-              alt={"Konference"}
+              src={"/images/svatebni-prednaska.jpg"}
+              alt={"Přednáška svatební fotografie"}
               width={1920}
               height={1080}
-              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              className="aspect-video h-full bg-gray-700 object-cover"
               objectFit="cover"
               loading="lazy"
             />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Přednáška svatební fotografie od Terezy Němečkové
             </span>
           </div>
         </SwiperSlide>
         <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
           <div className="h-full">
             <ExportedImage
-              src={"/images/conf.jpg"}
-              alt={"Konference"}
+              src={"/images/workshop-sviceni.jpg"}
+              alt={"Workshop"}
               width={1920}
               height={1080}
-              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
+              className="aspect-video h-full bg-gray-700 object-cover"
               objectFit="cover"
               loading="lazy"
             />
             <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="mb-16 w-3/4 md:mb-24 md:ml-auto md:w-2/3">
-          <div className="h-full">
-            <ExportedImage
-              src={"/images/conf.jpg"}
-              alt={"Konference"}
-              width={1920}
-              height={1080}
-              className="aspect-[3/4] h-full bg-gray-700 object-cover md:aspect-video"
-              objectFit="cover"
-              loading="lazy"
-            />
-            <span className="mt-4 block text-sm uppercase tracking-wider text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Workshop nastavení a práce se světlem od Martina Štembery
             </span>
           </div>
         </SwiperSlide>

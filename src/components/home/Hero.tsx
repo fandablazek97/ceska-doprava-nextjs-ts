@@ -8,7 +8,7 @@ export default function Hero() {
     >
       {/* Content */}
       <div className="z-10 pt-52 pb-32">
-        <div className="anim-slide-up reveal-delay-500 flex items-start justify-start">
+        <div className="anim-slide-up reveal-delay-300 flex items-start justify-start">
           <h1 className="mr-2 font-display text-4xl font-semibold uppercase leading-[1.2] text-white xs:text-5xl sm:text-7xl lg:text-9xl 2xl:text-[11.5rem]">
             Foto fest Plzeň
           </h1>
@@ -16,9 +16,9 @@ export default function Hero() {
             2022
           </span>
         </div>
-        <p className="anim-slide-up reveal-delay-800 mt-2 max-w-3xl text-lg font-medium md:text-xl">
+        <p className="anim-slide-up reveal-delay-600 mt-2 max-w-3xl text-lg font-medium md:text-xl">
           Největší fotografický festival na západě Čech.{" "}
-          <span className="ml-2 uppercase text-primary">#fotofestplzen</span>
+          <span className="uppercase text-primary md:ml-2">#fotofestplzen</span>
         </p>
         {/* <span className="mt-2 block text-xl font-semibold uppercase sm:text-2xl md:text-3xl">
           #fotofestplzen
@@ -32,7 +32,7 @@ export default function Hero() {
               1.10. 2022
             </span>
           </div>
-          <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-800 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Kde
             </span>
@@ -40,7 +40,7 @@ export default function Hero() {
               Depo 2015, Plzeň
             </span>
           </div>
-          <div className="anim-slide-up reveal-delay-1200 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Vstupné
             </span>
