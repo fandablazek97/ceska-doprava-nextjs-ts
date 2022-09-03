@@ -16,6 +16,7 @@ export default function Partners() {
             alt="Phototools - logo"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -33,6 +34,7 @@ export default function Partners() {
             alt="Depo 2015 - logo"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -50,6 +52,7 @@ export default function Partners() {
             alt="Image pro - logo"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -67,6 +70,7 @@ export default function Partners() {
             alt="Reveal - logo"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>

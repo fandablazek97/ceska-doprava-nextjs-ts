@@ -13,6 +13,7 @@ export default function Exhibitors() {
             alt="Logo Sony"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -27,6 +28,7 @@ export default function Exhibitors() {
             alt="Logo Canon"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -41,6 +43,7 @@ export default function Exhibitors() {
             alt="Logo Nikon"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -55,6 +58,7 @@ export default function Exhibitors() {
             alt="Logo Tamron"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -69,6 +73,7 @@ export default function Exhibitors() {
             alt="Logo Peak Design"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -83,6 +88,7 @@ export default function Exhibitors() {
             alt="Logo Manfortto"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -97,6 +103,7 @@ export default function Exhibitors() {
             alt="Logo Focus Nordic"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -111,6 +118,7 @@ export default function Exhibitors() {
             alt="Logo Phototools"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -125,6 +133,7 @@ export default function Exhibitors() {
             alt="Logo Irix"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -139,6 +148,7 @@ export default function Exhibitors() {
             alt="Logo 3lt"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
@@ -153,6 +163,7 @@ export default function Exhibitors() {
             alt="Logo Kvalitní fotky"
             width="128"
             height="46"
+            loading="lazy"
             className="h-full w-full"
           />
         </div>
