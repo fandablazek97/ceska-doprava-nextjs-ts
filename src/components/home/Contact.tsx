@@ -35,7 +35,7 @@ export default function Contact() {
             as={"div"}
             className="lg:reveal-delay-200 col-span-2 mt-8 flex flex-col lg:mt-0"
           >
-            <Heading level={3} size="sm" font="display">
+            <Heading level={3} size="base" font="display" weight="medium">
               Jakub Flaišman
             </Heading>
             <div className="mt-6 flex flex-col gap-2">
@@ -59,7 +59,7 @@ export default function Contact() {
             as={"div"}
             className="lg:reveal-delay-400 col-span-3 mt-8 flex flex-col lg:mt-0"
           >
-            <Heading level={3} size="sm" font="display">
+            <Heading level={3} size="base" font="display" weight="medium">
               Sledujte nás
             </Heading>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
@@ -117,7 +117,13 @@ export default function Contact() {
 
         <div className="pt-16 md:pt-28 lg:grid lg:grid-cols-7 lg:gap-32">
           <SlideUp as={"div"} className="col-span-2">
-            <Heading level={3} size="lg" font="display" color="primary">
+            <Heading
+              level={3}
+              size="lg"
+              font="display"
+              color="primary"
+              weight="medium"
+            >
               Místo konání
             </Heading>
           </SlideUp>

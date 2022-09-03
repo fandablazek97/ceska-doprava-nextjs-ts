@@ -23,7 +23,7 @@ export default function CookieConsentBar() {
   }, [isScrolled, setIsScrolled]);
   return (
     <CookieConsent
-      debug={true}
+      // debug={true}
       cookieName="ffp-2022"
       location="bottom"
       disableStyles={true}

@@ -54,7 +54,13 @@ export default function Program({ className = "" }: Props) {
                 : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full"
             }
           >
-            <Heading level={3} size="lg" font="display" color="primary">
+            <Heading
+              level={3}
+              size="lg"
+              font="display"
+              color="primary"
+              weight="medium"
+            >
               {stage.headline}
             </Heading>
             <p className="text-sm">{stage.caption}</p>

@@ -70,7 +70,13 @@ export default function Newsletter() {
   return (
     <div className="grid w-full grid-cols-1 gap-10 bg-secondary/80 py-20 px-6 sm:px-11 lg:grid-cols-2 lg:py-36">
       <div className="col-span-1">
-        <Heading level={2} size="lg" font="display" className="uppercase">
+        <Heading
+          level={2}
+          size="lg"
+          font="display"
+          className="uppercase"
+          weight="medium"
+        >
           Odebírej novinky, ať ti nic neuteče!
         </Heading>
         <p className="mt-6 text-white">

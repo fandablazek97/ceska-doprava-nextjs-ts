@@ -14,6 +14,7 @@ const GdprPage: NextPage = () => {
           level={1}
           size="3xl"
           font="display"
+          weight="medium"
           className="pt-20 md:pt-32"
           align="center"
         >

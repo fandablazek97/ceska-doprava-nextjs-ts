@@ -19,15 +19,15 @@ export default function Accordion({
       {({ open }) => (
         <div>
           <Disclosure.Button
-            className={`flex w-full items-center justify-between py-4 text-left text-xl font-semibold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/70`}
+            className={`flex w-full items-center justify-between py-4 text-left text-xl font-semibold leading-tight focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/70`}
           >
             <span className={`${open ? "text-primary" : "text-rich"}`}>
               {title}
             </span>
             {open ? (
-              <HiMinus className="text-primary" />
+              <HiMinus className="shrink-0 text-primary" />
             ) : (
-              <HiPlus className="text-rich" />
+              <HiPlus className="shrink-0 text-rich" />
             )}
           </Disclosure.Button>
           <Disclosure.Panel className="pt-2 pb-8">{children}</Disclosure.Panel>

@@ -26,7 +26,7 @@ const BrandPage: NextPage = () => {
 
       {/* Barvy */}
       <Wrapper paddedContent="sm">
-        <Heading level={2} size="xl" font="display">
+        <Heading level={2} size="xl" font="display" weight="medium">
           Barvy
         </Heading>
         <div className="grid grid-cols-1 gap-10 py-16 xs:grid-cols-2 md:grid-cols-3">
@@ -68,7 +68,7 @@ const BrandPage: NextPage = () => {
 
       {/* Loga */}
       <Wrapper paddedContent="sm">
-        <Heading level={2} size="xl" font="display">
+        <Heading level={2} size="xl" font="display" weight="medium">
           Loga ke stažení
         </Heading>
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 py-16 md:grid-cols-2">
@@ -219,7 +219,13 @@ const BrandPage: NextPage = () => {
       {/* Vše ke stažení */}
       <Wrapper paddedContent="sm" className="mb-20">
         <div className="flex w-full flex-col items-center justify-center gap-8 bg-secondary px-5 py-20 md:py-32">
-          <Heading level={2} size="xl" font="display" align="center">
+          <Heading
+            level={2}
+            size="xl"
+            font="display"
+            align="center"
+            weight="medium"
+          >
             Komplet + manuál ke stažení
           </Heading>
           <p className="max-w-2xl text-center text-lg text-gray-100">

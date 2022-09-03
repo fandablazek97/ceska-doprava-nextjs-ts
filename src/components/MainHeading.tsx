@@ -36,14 +36,14 @@ export default function MainHeading({
   return (
     <Tag className={`flex items-start ${className}`}>
       <Level
-        className={`mr-2 font-display font-bold leading-[1.2] text-white 
+        className={`mr-2 font-display font-medium leading-[1.2] text-white 
         ${sizeClasses[size]}`}
         {...rest}
       >
         {children}
       </Level>
       {number !== "" && (
-        <span className="block font-display text-base font-semibold leading-[1.2] text-white md:text-lg lg:text-xl">
+        <span className="block font-display text-base font-medium leading-[1.2] text-white md:text-xl lg:text-2xl">
           {number}
         </span>
       )}

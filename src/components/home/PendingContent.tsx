@@ -13,7 +13,7 @@ export default function PendingContent({
     <SlideUp
       className={`flex items-center justify-center bg-secondary/25 py-20 px-6 sm:px-11 lg:py-36 ${className}`}
     >
-      <span className="text-center font-display text-2xl leading-tight text-white sm:text-3xl md:text-4xl">
+      <span className="text-center font-display text-2xl font-medium leading-tight text-white sm:text-3xl md:text-4xl">
         {headline}
       </span>
     </SlideUp>

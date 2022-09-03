@@ -23,7 +23,13 @@ export default function ProgramDesktop({
       {/* Nadpisy */}
       <div className="grid grid-cols-4 gap-10">
         <div className="flex flex-col gap-3 text-left">
-          <Heading level={3} size="lg" font="display" color="primary">
+          <Heading
+            level={3}
+            size="lg"
+            font="display"
+            color="primary"
+            weight="medium"
+          >
             Ateliér
           </Heading>
           <p className="text-sm">
@@ -32,7 +38,13 @@ export default function ProgramDesktop({
           </p>
         </div>
         <div className="flex flex-col gap-3 text-left">
-          <Heading level={3} size="lg" font="display" color="primary">
+          <Heading
+            level={3}
+            size="lg"
+            font="display"
+            color="primary"
+            weight="medium"
+          >
             Klempírna
           </Heading>
           <p className="text-sm">
@@ -41,7 +53,13 @@ export default function ProgramDesktop({
           </p>
         </div>
         <div className="flex flex-col gap-3 text-left">
-          <Heading level={3} size="lg" font="display" color="primary">
+          <Heading
+            level={3}
+            size="lg"
+            font="display"
+            color="primary"
+            weight="medium"
+          >
             Nádvoří
           </Heading>
           <p className="text-sm">
@@ -50,7 +68,13 @@ export default function ProgramDesktop({
           </p>
         </div>
         <div className="flex flex-col gap-3 text-left">
-          <Heading level={3} size="lg" font="display" color="primary">
+          <Heading
+            level={3}
+            size="lg"
+            font="display"
+            color="primary"
+            weight="medium"
+          >
             Kontejnery
           </Heading>
           <p className="text-sm">
