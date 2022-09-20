@@ -23,7 +23,7 @@ const CookiesPage: NextPage = () => {
       </Wrapper>
       <Wrapper size="sm" className="pb-40">
         <CookiesPolicy
-          domain={globalConfig.meta.url}
+          domain={globalConfig.meta.shortUrl}
           ownerName={globalConfig.client.companyName}
           adress={globalConfig.client.adress}
           ico={globalConfig.client.ico}

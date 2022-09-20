@@ -137,7 +137,7 @@ export default function CookiesPolicy({
             target="_blank"
             rel="noreferrer external"
           >
-            Microsoft edge
+            Microsoft Edge
           </a>
         </li>
         <li>

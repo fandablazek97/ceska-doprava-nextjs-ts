@@ -8,6 +8,7 @@ type Props = {
   time: string;
   hasRegistration: boolean;
   isPaid: boolean;
+  isFull: boolean;
   shopLink: string;
   className?: string;
 };
@@ -19,6 +20,7 @@ export default function ProgramCard({
   time,
   hasRegistration,
   isPaid,
+  isFull,
   shopLink,
   className = "",
 }: Props) {
@@ -36,8 +38,8 @@ export default function ProgramCard({
       <span className="text-center text-lg leading-tight tracking-widest text-gray-400">
         {time}
       </span>
-      {hasRegistration && !isPaid && <RegistrationModal />}
-      {hasRegistration && isPaid && (
+      {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
+      {hasRegistration && isPaid && !isFull && (
         <a
           href={shopLink}
           target="blank"
@@ -45,6 +47,14 @@ export default function ProgramCard({
         >
           Koupit vstupenku
         </a>
+      )}
+      {isFull && (
+        <span className="block text-center text-error">
+          Kapacita naplněna - již se nelze registrovat
+        </span>
+      )}
+      {!hasRegistration && !isPaid && (
+        <span className="block text-center text-info">Volně přístupné</span>
       )}
     </li>
   );

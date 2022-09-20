@@ -134,7 +134,7 @@ export default function Contact() {
             className="lg:reveal-delay-200 col-span-5 mt-8 flex flex-col lg:mt-0"
           >
             <Heading level={3} size="lg">
-              Depo 2015, Plzeň
+              DEPO2015, Plzeň
             </Heading>
             <span className="mt-1 block text-white">
               Presslova 14, 301 00 Plzeň 3-Jižní Předměstí
@@ -167,7 +167,7 @@ export default function Contact() {
                 as="a"
                 href="https://www.depo2015.cz"
                 target="blank"
-                aria-label="Webová stránka Depo 2015"
+                aria-label="Webová stránka DEPO2015"
                 type="filled"
                 isIconBox={true}
                 shape="pill"

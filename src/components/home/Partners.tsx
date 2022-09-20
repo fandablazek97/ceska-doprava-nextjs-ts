@@ -31,7 +31,7 @@ export default function Partners() {
         <div className={`h-[64] w-[160px]`}>
           <img
             src="/logos/brands/depo-2015.svg"
-            alt="Depo 2015 - logo"
+            alt="DEPO2015 - logo"
             width="128"
             height="46"
             loading="lazy"

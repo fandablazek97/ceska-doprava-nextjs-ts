@@ -16,7 +16,7 @@ export default function Seo({
   return (
     <NextSeo
       title={title}
-      titleTemplate="Foto Fest Plzeň | %s"
+      titleTemplate="%s | Foto Fest Plzeň"
       description={description}
       openGraph={{ title, description }}
       noindex={noIndex}

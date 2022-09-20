@@ -16,23 +16,31 @@ type Props = {
 const workshops = [
   {
     id: 1,
-    value: "Workshop 1",
+    value: "F22 - Michal Houdek - Fotíme motorku prakticky",
   },
-  {
-    id: 2,
-    value: "Workshop 2",
-  },
+  // {
+  //   id: 2,
+  //   value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
+  // },
   {
     id: 3,
-    value: "Workshop 3",
+    value: "Nikon - Photowalk s Nikonem",
   },
   {
     id: 4,
-    value: "Workshop 4",
+    value: "Peakdesign - You and me",
+  },
+  // {
+  //   id: 5,
+  //   value: "Manfrotto - Lukáš Navara - Portréty",
+  // },
+  {
+    id: 6,
+    value: "Dominik Beránek - Street portrét",
   },
   {
-    id: 5,
-    value: "Workshop 5",
+    id: 7,
+    value: "Tomáš Košňar + Leica klub - Focení na film",
   },
 ];
 

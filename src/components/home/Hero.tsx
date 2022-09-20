@@ -37,7 +37,7 @@ export default function Hero() {
               Kde
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
-              Depo 2015, Plzeň
+              DEPO2015, Plzeň
             </span>
           </div>
           <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">

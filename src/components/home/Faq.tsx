@@ -7,19 +7,13 @@ const questionsAnswers = [
     id: 1,
     question: "Jaké je vstupné?",
     answer:
-      "Vstupné na festival je zdarma. Některé workshopy mohou být zpoplatněné, jejich cenu a odkaz na zakoupení vstupenky najdete přímo v programu (dostupný již brzy).",
+      "Vstupné na festival je zdarma. Některé workshopy mohou být zpoplatněné, jejich cenu a odkaz na zakoupení vstupenky najdete přímo v programu.",
   },
   {
     id: 2,
     question: "Je nutné se na přednášky a workshopy registrovat?",
     answer:
       "Přednášky jsou volně přístupné. U workshopů registrace nutná je. Jejich kapacita je omezena tak, aby se vám lektor mohl věnovat individuálně. Pokud se chcete workshopu zúčastnit, registrujte se.",
-  },
-  {
-    id: 3,
-    question: "Kdy budete zveřejňovat program?",
-    answer:
-      "Program s otevřenými registracemi na workshopy odtajníme cca 3 týdny před začátkem festivalu.",
   },
   {
     id: 4,

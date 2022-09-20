@@ -7,6 +7,21 @@ export default function Exhibitors() {
         as={"div"}
         className="reveal-delay-0 col-span-1 flex w-full items-center justify-center"
       >
+        <div className={`h-[64px] w-[160px]`}>
+          <img
+            src="/logos/brands/phototools.svg"
+            alt="Logo Phototools"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay-100 col-span-1 flex w-full items-center justify-center"
+      >
         <div className={`h-[64px] w-[140px]`}>
           <img
             src="/logos/brands/sony.svg"
@@ -20,7 +35,7 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-100 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-0 md:reveal-delay-200 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
@@ -35,7 +50,7 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-0 md:reveal-delay-200 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-100 md:reveal-delay-300 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
@@ -50,7 +65,7 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-100 md:reveal-delay-300 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-0 xl:reveal-delay-400 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
@@ -65,7 +80,7 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-0 xl:reveal-delay-400 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-100 xl:reveal-delay-500 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
@@ -80,7 +95,7 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-100 xl:reveal-delay-500 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-0 md:reveal-delay-200 xl:reveal-delay-0 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
@@ -95,27 +110,12 @@ export default function Exhibitors() {
       </SlideUp>
       <SlideUp
         as={"div"}
-        className="reveal-delay-0 md:reveal-delay-200 xl:reveal-delay-0 col-span-1 flex w-full items-center justify-center"
+        className="reveal-delay-100 md:reveal-delay-300 xl:reveal-delay-100 col-span-1 flex w-full items-center justify-center"
       >
         <div className={`h-[64px] w-[140px]`}>
           <img
             src="/logos/brands/focus-nordic.svg"
             alt="Logo Focus Nordic"
-            width="128"
-            height="46"
-            loading="lazy"
-            className="h-full w-full"
-          />
-        </div>
-      </SlideUp>
-      <SlideUp
-        as={"div"}
-        className="reveal-delay-100 md:reveal-delay-300 xl:reveal-delay-100 col-span-1 flex w-full items-center justify-center"
-      >
-        <div className={`h-[64px] w-[160px]`}>
-          <img
-            src="/logos/brands/phototools.svg"
-            alt="Logo Phototools"
             width="128"
             height="46"
             loading="lazy"
@@ -161,6 +161,81 @@ export default function Exhibitors() {
           <img
             src="/logos/brands/kvalitni-fotky.svg"
             alt="Logo Kvalitní fotky"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay- md:reveal-delay-200 xl:reveal-delay-400 col-span-1 flex w-full items-center justify-center"
+      >
+        <div className={`h-[64px] w-[160px]`}>
+          <img
+            src="/logos/brands/view-sonic.svg"
+            alt="Logo ViewSonic"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay-0 col-span-1 flex w-full items-center justify-center"
+      >
+        <div className={`h-[64px] w-[160px]`}>
+          <img
+            src="/logos/brands/leicaklub.svg"
+            alt="Logo Keica Klub"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay-100 col-span-1 flex w-full items-center justify-center"
+      >
+        <div className={`h-[64px] w-[140px]`}>
+          <img
+            src="/logos/brands/avenger.svg"
+            alt="Logo Avenger"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay-0 md:reveal-delay-200 col-span-1 flex w-full items-center justify-center"
+      >
+        <div className={`h-[64px] w-[140px]`}>
+          <img
+            src="/logos/brands/joby.svg"
+            alt="Logo Joby"
+            width="128"
+            height="46"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      <SlideUp
+        as={"div"}
+        className="reveal-delay-100 md:reveal-delay-300 col-span-1 flex w-full items-center justify-center"
+      >
+        <div className={`h-[64px] w-[140px]`}>
+          <img
+            src="/logos/brands/lowepro.svg"
+            alt="Logo Lowepro"
             width="128"
             height="46"
             loading="lazy"

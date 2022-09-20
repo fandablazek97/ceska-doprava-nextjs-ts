@@ -3,14 +3,13 @@ import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
 import Exhibitors from "@components/home/Exhibitors";
 import Faq from "@components/home/Faq";
-// import Guests from "@components/home/Guests";
+import Guests from "@components/home/Guests";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
-import PendingContent from "@components/home/PendingContent";
 import MainHeading from "@components/MainHeading";
-// import Program from "@components/program/Program";
-// import ProgramDesktop from "@components/program/ProgramDesktop";
+import Program from "@components/program/Program";
+import ProgramDesktop from "@components/program/ProgramDesktop";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
@@ -43,13 +42,13 @@ const Home: NextPage = () => {
         <SlideUp
           as={"p"}
           delay="200"
-          className="mt-8 max-w-prose text-lg font-medium"
+          className="mt-8 max-w-xl text-lg font-medium"
         >
-          Zajímá tě, s kým se letos na festivalu potkáš? Stay tuned! Brzy
-          odhalíme lektory a speakery, kteří za vámi dorazí.
+          Letošní rok bude opět plný zajímavých jmen. Mrkej, kdo letos dorazí
+          jako speaker nebo lektor.
         </SlideUp>
-        <PendingContent className="mt-20 md:mt-36" />
-        {/* <Guests className="mt-20 md:mt-36" /> */}
+        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        <Guests className="mt-20 md:mt-36" />
       </Wrapper>
 
       <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
@@ -84,14 +83,15 @@ const Home: NextPage = () => {
         >
           I letos se držíme osvědčené taktiky, program bude složený z přednášek
           a workshopů na čtyřech stagích. Přednášky, stejně jako minule, budou
-          volně přístupné pro všechny návštěvníky. Na workshopy se letos budeš
-          muset registrovat nebo si na něj zakoupit vstupenku, záleží na jaký
-          půjdeš. Pokud chceš mít místo na workshopy jasný, sleduj naše sítě,
-          odebírej newsletter nebo se přidej k události.
+          volně přístupné pro všechny návštěvníky.
+          <br />
+          <br />
+          Na workshopy se letos budeš muset registrovat nebo si na něj zakoupit
+          vstupenku, záleží na jaký půjdeš.
         </SlideUp>
-        <PendingContent className="mt-20 md:mt-36" />
-        {/* <Program className="mt-20" />
-        <ProgramDesktop className="mt-36" /> */}
+        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        <Program className="mt-20" />
+        <ProgramDesktop className="mt-36" />
       </Wrapper>
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">

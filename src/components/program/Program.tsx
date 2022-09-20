@@ -10,25 +10,25 @@ type Props = {
 const stagesTabs = [
   {
     id: 1,
-    headline: "Ateliér",
-    caption:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
-  },
-  {
-    id: 2,
     headline: "Klempírna",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
+    id: 2,
+    headline: "Ateliér",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
+  },
+  {
     id: 3,
-    headline: "Nádvoří",
+    headline: "Kontejnery",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
     id: 4,
-    headline: "Kontejnery",
+    headline: "Nádvoří",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
@@ -42,7 +42,7 @@ export default function Program({ className = "" }: Props) {
     >
       <Tab.List
         className={
-          "flex w-auto gap-5 overflow-x-auto px-1 py-4 sm:w-full sm:flex-1 sm:shrink-0 sm:flex-col sm:gap-10 sm:p-0"
+          "flex w-auto gap-5 overflow-x-auto px-1 py-4 sm:w-full sm:flex-1 sm:shrink-0 sm:flex-col sm:p-0"
         }
       >
         {stagesTabs.map((stage) => (
@@ -50,8 +50,8 @@ export default function Program({ className = "" }: Props) {
             key={stage.id}
             className={({ selected }) =>
               selected
-                ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full"
-                : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full"
+                ? "flex w-40 shrink-0 flex-col items-center justify-center gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start"
+                : "flex w-40 shrink-0 flex-col items-center justify-center gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start"
             }
           >
             <Heading
@@ -60,30 +60,15 @@ export default function Program({ className = "" }: Props) {
               font="display"
               color="primary"
               weight="medium"
+              className="text-center sm:text-left"
             >
               {stage.headline}
             </Heading>
-            <p className="text-sm">{stage.caption}</p>
+            {/* <p className="text-sm">{stage.caption}</p> */}
           </Tab>
         ))}
       </Tab.List>
       <Tab.Panels className={"py-10 sm:w-full sm:flex-1 sm:py-0 sm:px-5"}>
-        <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
-          <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {atelier.map((item) => (
-              <ProgramCard
-                key={item.id}
-                speaker={item.speaker}
-                category={item.category}
-                name={item.name}
-                time={item.time}
-                hasRegistration={item.hasRegistration}
-                isPaid={item.isPaid}
-                shopLink={item.shopLink}
-              />
-            ))}
-          </ul>
-        </Tab.Panel>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
             {klempirna.map((item) => (
@@ -95,6 +80,7 @@ export default function Program({ className = "" }: Props) {
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                isFull={item.isFull}
                 shopLink={item.shopLink}
               />
             ))}
@@ -102,7 +88,7 @@ export default function Program({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {nadvori.map((item) => (
+            {atelier.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -111,6 +97,7 @@ export default function Program({ className = "" }: Props) {
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                isFull={item.isFull}
                 shopLink={item.shopLink}
               />
             ))}
@@ -127,6 +114,24 @@ export default function Program({ className = "" }: Props) {
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                isFull={item.isFull}
+                shopLink={item.shopLink}
+              />
+            ))}
+          </ul>
+        </Tab.Panel>
+        <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
+          <ul className="flex w-full flex-col divide-y divide-gray-600/80">
+            {nadvori.map((item) => (
+              <ProgramCard
+                key={item.id}
+                speaker={item.speaker}
+                category={item.category}
+                name={item.name}
+                time={item.time}
+                hasRegistration={item.hasRegistration}
+                isPaid={item.isPaid}
+                isFull={item.isFull}
                 shopLink={item.shopLink}
               />
             ))}
