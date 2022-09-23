@@ -34,10 +34,10 @@ const workshops = [
   //   id: 5,
   //   value: "Manfrotto - Lukáš Navara - Portréty",
   // },
-  {
-    id: 6,
-    value: "Dominik Beránek - Street portrét",
-  },
+  // {
+  //   id: 6,
+  //   value: "Dominik Beránek - Street portrét",
+  // },
   {
     id: 7,
     value: "Tomáš Košňar + Leica klub - Focení na film",

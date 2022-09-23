@@ -46,7 +46,7 @@ export default function GuestCard({
           href={igLink}
           target={"_blank"}
           rel="noreferrer"
-          className="c-link-3-a flex items-center gap-2 text-primary"
+          className="c-link-3-a flex text-xs sm:text-sm lg:text-base items-center gap-2 text-primary"
         >
           <FaInstagram />
           <span>{igName}</span>

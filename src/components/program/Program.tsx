@@ -50,13 +50,13 @@ export default function Program({ className = "" }: Props) {
             key={stage.id}
             className={({ selected }) =>
               selected
-                ? "flex w-40 shrink-0 flex-col items-center justify-center gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start"
-                : "flex w-40 shrink-0 flex-col items-center justify-center gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start"
+                ? "flex w-32 shrink-0 flex-col items-center justify-center gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start"
+                : "flex w-32 shrink-0 flex-col items-center justify-center gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start"
             }
           >
             <Heading
               level={3}
-              size="lg"
+              size="base"
               font="display"
               color="primary"
               weight="medium"

@@ -221,6 +221,13 @@ export default function Guests({ className = "" }: Props) {
             igName={"younmehub"}
             className="xs:reveal-delay-100"
           />
+          <GuestCard
+            src={"/images/hoste/fotka/canon-pavel-sery.jpg"}
+            alt="Pavel Šerý"
+            name="Pavel Šerý"
+            caption="Plzeňák, kanoňák který přes dvacet let působí jako produktový specialista foto-video ve společnosti Canon CZ"
+            className="xs:reveal-delay-0 xl:reveal-delay-200"
+          />
         </Tab.Panel>
         <Tab.Panel
           className={
