@@ -16,7 +16,7 @@ import "@fontsource/inter/800.css";
 import "../styles/main.css";
 
 // GA
-import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+// import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 // Disable smooth scroll on route change: https://github.com/vercel/next.js/issues/20125#issuecomment-757547865
 function useNormalScrollRoutes() {
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useNormalScrollRoutes();
   return (
     <AppLayout>
-      <GoogleAnalytics measurementId="G-RZB55HZCDW" />
+      {/* <GoogleAnalytics measurementId="G-RZB55HZCDW" /> */}
       <Component {...pageProps} />
       <ToastContainer
         position="top-center"

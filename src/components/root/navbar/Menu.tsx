@@ -1,5 +1,4 @@
 import SocialLinks from "@components/SocialLinks";
-import Wrapper from "@components/Wrapper";
 import { useEffect, useState } from "react";
 import MenuAdditionalLinks from "./MenuAdditionalLinks";
 import MenuButton from "./MenuButton";
@@ -36,17 +35,25 @@ export default function Menu({ className = "" }: MenuOptions) {
         isActivated={isOpen}
         className={`relative z-[120] ${className}`}
       />
+      {/* Overlay */}
       <div
-        className={`fixed inset-0 z-[115] h-screen w-screen overflow-y-auto bg-body-50 transition-[opacity,visibility] ease-out ${
+        onClick={closeMenu}
+        className={`fixed inset-0 h-screen w-screen cursor-pointer bg-primary/20 backdrop-blur-lg transition-[opacity,visibility] ease-out ${
           isOpen
             ? "visible opacity-100 duration-[400ms]"
             : "invisible opacity-0 duration-150"
         }`}
+      ></div>
+
+      {/* Menu */}
+      <div
+        className={`fixed top-0 right-0 bottom-0 z-[115] h-screen w-screen overflow-y-auto bg-white transition-[opacity,visibility,transform,shadow] ease-out md:w-[50vw] ${
+          isOpen
+            ? "visible translate-x-0 opacity-100 shadow-2xl duration-[400ms]"
+            : "invisible translate-x-full opacity-0 shadow-none duration-150"
+        }`}
       >
-        <Wrapper
-          size="lg"
-          className="flex flex-col items-start space-y-16 pt-28 pl-0 md:pt-36 lg:pl-[50%]"
-        >
+        <div className="flex flex-col items-start space-y-16 pt-28 pl-0 md:pt-36 lg:pl-[50%]">
           <MenuMainLinks
             onEachLinkClick={closeMenu}
             className={`transform-gpu transition-[transform,opacity] ease-out ${
@@ -69,7 +76,7 @@ export default function Menu({ className = "" }: MenuOptions) {
                 : "duration-0 -translate-y-12 opacity-0 delay-150"
             }`}
           />
-        </Wrapper>
+        </div>
       </div>
     </>
   );

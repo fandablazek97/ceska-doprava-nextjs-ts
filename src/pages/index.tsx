@@ -1,150 +1,112 @@
+import Button from "@components/Button";
+import Heading from "@components/Heading";
 import Aftermovie from "@components/home/Aftermovie";
-import Carousel from "@components/home/Carousel";
-import Contact from "@components/home/Contact";
-import Exhibitors from "@components/home/Exhibitors";
-import Faq from "@components/home/Faq";
-import Guests from "@components/home/Guests";
 import Hero from "@components/home/Hero";
-import Newsletter from "@components/home/Newsletter";
-import Partners from "@components/home/Partners";
-import MainHeading from "@components/MainHeading";
-import Program from "@components/program/Program";
-import ProgramDesktop from "@components/program/ProgramDesktop";
-import SlideUp from "@components/scroll-reveal/SlideUp";
+import NearestDeparturesCard from "@components/home/NearestDeparturesCard";
+import ParallaxZajezdy from "@components/home/ParallaxZajezdy";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 
-// To Do
-// Sitemapa generátor
-// Komponent "program již brzy"
-// Seo
-// Finální content
+// Nejbližší odjezdy data
+export const odjezdy = [
+  {
+    id: 1,
+    tripId: 576,
+    imageSrc: "/images/conf.jpg",
+    imageAlt: "Heyyyy",
+    country: "Chorvatsko",
+    name: "Baška",
+    dateFrom: "22.7.2022",
+    dateTo: "28.7.2022",
+  },
+  {
+    id: 2,
+    tripId: 576,
+    imageSrc: "/images/conf.jpg",
+    imageAlt: "Heyyyy",
+    country: "Chorvatsko",
+    name: "Baška",
+    dateFrom: "22.7.2022",
+    dateTo: "28.7.2022",
+  },
+  {
+    id: 3,
+    tripId: 576,
+    imageSrc: "/images/conf.jpg",
+    imageAlt: "Heyyyy",
+    country: "Chorvatsko",
+    name: "Baška",
+    dateFrom: "22.7.2022",
+    dateTo: "28.7.2022",
+  },
+  {
+    id: 4,
+    tripId: 576,
+    imageSrc: "/images/conf.jpg",
+    imageAlt: "Heyyyy",
+    country: "Chorvatsko",
+    name: "Baška",
+    dateFrom: "22.7.2022",
+    dateTo: "28.7.2022",
+  },
+];
 
 const Home: NextPage = () => {
   return (
     <>
-      <Seo
-        title="Největší fotografický festival na západě Čech"
-        description=""
-      />
+      <Seo title="Česká doprava" description="" />
       <Hero />
+
+      {/* Nejbližší odjezdy */}
+      <Wrapper size="base" className="pb-28 md:pb-36">
+        <Heading level={2} size="sm" className="mb-12">
+          Nejbližší odjezdy
+        </Heading>
+        <div className="grid grid-cols-1 gap-10 xs:grid-cols-2 lg:grid-cols-4">
+          {odjezdy.map((odjezd) => (
+            <NearestDeparturesCard
+              tripId={odjezd.tripId}
+              key={odjezd.id}
+              imageSrc={odjezd.imageSrc}
+              imageAlt={odjezd.imageAlt}
+              country={odjezd.country}
+              name={odjezd.name}
+              dateFrom={odjezd.dateFrom}
+              dateTo={odjezd.dateTo}
+              className="col-span-1"
+            />
+          ))}
+        </div>
+      </Wrapper>
+
+      {/* Aftermovie */}
       <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
         <Aftermovie />
       </Wrapper>
 
-      <Wrapper as={"section"} paddedContent="base">
-        <SlideUp>
-          <MainHeading level={2} number="01" size="2xl">
-            Hosté
-          </MainHeading>
-        </SlideUp>
-        <SlideUp
-          as={"p"}
-          delay="200"
-          className="mt-8 max-w-xl text-lg font-medium"
-        >
-          Letošní rok bude opět plný zajímavých jmen. Mrkej, kdo letos dorazí
-          jako speaker nebo lektor.
-        </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
-        <Guests className="mt-20 md:mt-36" />
-      </Wrapper>
-
-      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
-        <div className="flex flex-col items-center justify-center">
-          <SlideUp>
-            <MainHeading level={2} size="2xl" number="02">
-              Vystavovatelé
-            </MainHeading>
-          </SlideUp>
-          <SlideUp
-            as={"p"}
-            delay="200"
-            className="mt-8 max-w-prose text-center text-lg font-medium"
-          >
-            Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
-            poradit se s výběrem nového kousku.
-          </SlideUp>
-          <Exhibitors />
-        </div>
-      </Wrapper>
-
-      <Wrapper as={"section"} id="program" paddedContent="base">
-        <SlideUp>
-          <MainHeading level={2} number="03" size="2xl">
-            Program
-          </MainHeading>
-        </SlideUp>
-        <SlideUp
-          as={"p"}
-          delay="200"
-          className="mt-8 max-w-prose text-lg font-medium"
-        >
-          I letos se držíme osvědčené taktiky, program bude složený z přednášek
-          a workshopů na čtyřech stagích. Přednášky, stejně jako minule, budou
-          volně přístupné pro všechny návštěvníky.
-          <br />
-          <br />
-          Na workshopy se letos budeš muset registrovat nebo si na něj zakoupit
-          vstupenku, záleží na jaký půjdeš.
-        </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
-        <Program className="mt-20" />
-        <ProgramDesktop className="mt-36" />
-      </Wrapper>
-
-      <Wrapper as={"section"} id="newsletter" paddedContent="base">
-        <SlideUp>
-          <Newsletter />
-        </SlideUp>
-      </Wrapper>
-
-      <Contact />
-
+      {/* Zájezdy */}
       <Wrapper
         as={"section"}
-        id="faq"
+        size="base"
         paddedContent="base"
-        className="grid grid-cols-1 gap-20 sm:mt-20 lg:grid-cols-3"
+        className="space-y-10"
       >
-        <div className="col-span-1">
-          <SlideUp>
-            <MainHeading level={2} number="05" size="2xl">
-              Faq
-            </MainHeading>
-          </SlideUp>
-          <SlideUp
-            as={"p"}
-            delay="200"
-            className="mt-8 max-w-xl text-lg font-medium"
-          >
-            Odpovědi na to, na co se nás často ptáte.
-          </SlideUp>
-        </div>
-        <div className="col-span-2">
-          <Faq />
-        </div>
+        <Heading level={2} size="xl" className="max-w-4xl">
+          Pojeďte s námi na dovolenou po celé ČR i do zahraničí
+        </Heading>
+        <p className="max-w-prose">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          consequuntur dignissimos voluptatibus quos facilis architecto iure
+          eaque nobis voluptas natus fugit nulla aperiam eius ducimus, excepturi
+          sunt reprehenderit ea odio.
+        </p>
+        <Button>Zobrazit zájezdy</Button>
       </Wrapper>
 
-      <section className="py-24 xl:py-32">
-        <Carousel />
-      </section>
-
-      <Wrapper
-        as={"section"}
-        id="vystavovatele"
-        paddedContent="base"
-        className="mb-24"
-      >
-        <div className="flex flex-col items-center justify-center">
-          <SlideUp>
-            <MainHeading level={2} size="2xl" number="06">
-              Partneři
-            </MainHeading>
-          </SlideUp>
-          <Partners />
-        </div>
+      {/* Zájezdy Parallax */}
+      <Wrapper size="fluid" paddedContent="base">
+        <ParallaxZajezdy />
       </Wrapper>
     </>
   );

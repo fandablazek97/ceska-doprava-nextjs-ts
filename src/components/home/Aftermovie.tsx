@@ -34,13 +34,13 @@ export default function Aftermovie() {
         </video>
         <div className="z-1 absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2">
           <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-transparent">
-            <BsFillPlayFill className="z-10 text-3xl text-body-100" />
-            <div className="absolute inset-0 -z-10 h-20 w-20 rounded-full bg-white transition-transform duration-300 ease-out-back group-hover:scale-[1.25] lg:group-hover:scale-[1.35]"></div>
+            <BsFillPlayFill className="z-10 text-3xl text-white" />
+            <div className="absolute inset-0 -z-10 h-20 w-20 rounded-full bg-primary transition-transform duration-300 ease-out-back group-hover:scale-[1.25] lg:group-hover:scale-[1.35]"></div>
           </div>
         </div>
       </button>
-      <span className="pt-8 text-xs font-medium uppercase tracking-wider">
-        Foto Fest Plzeň 2019 aftermovie
+      <span className="pt-8 text-sm font-medium tracking-wider">
+        Přehrát video
       </span>
 
       {/* Samotný modal */}

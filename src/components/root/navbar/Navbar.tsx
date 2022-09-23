@@ -39,22 +39,22 @@ export default function Navbar() {
     //   } ${isNavbarVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     // >
     <nav
-      className={`fixed z-[100] h-20 w-screen transition-colors duration-500 ${
-        isNavbarScrolled ? "bg-body/70 backdrop-blur-lg" : "bg-transparent"
+      className={`fixed z-[100] h-20 w-screen transition duration-500 ${
+        isNavbarScrolled ? "bg-body shadow-2xl" : "bg-transparent"
       }`}
     >
       <Wrapper
         size="lg"
         className="flex h-full items-center justify-between gap-6 md:gap-10 xl:gap-16"
       >
-        <NavbarMainLinks className="hidden lg:flex" />
-        <Menu className="lg:hidden" />
         <Link href="/">
-          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
-            <BrandLogo className="origin-left" />
+          <a className="z-[110] mr-auto max-w-[128px] scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
+            <BrandLogo />
           </a>
         </Link>
+        <NavbarMainLinks className="hidden lg:flex" />
         <NavbarAdditionalLinks />
+        <Menu />
       </Wrapper>
     </nav>
   );
